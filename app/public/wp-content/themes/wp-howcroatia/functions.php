@@ -15,13 +15,15 @@ add_action('wp_enqueue_scripts', 'howcroatia_files');
 
 /* THEME SUPPORT */
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 
 /* REGISTRATION OF NAV MENU */
 function custom_menus() {
     register_nav_menus(
         array(
-            'nav-menu' => 'Navbar Menu'
+            'nav-menu' => 'Navbar Menu',
+            'business-listing' => 'Business Listing Menu'
         )
     );
 }

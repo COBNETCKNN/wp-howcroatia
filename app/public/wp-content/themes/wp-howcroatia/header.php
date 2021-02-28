@@ -32,13 +32,16 @@
           'menu_class' => 'header_nav_menu'
         ));
       ?>
+      <div class="business_listings header__navigation__link--expanding js-expanding-link">Business Listings</div>
   </nav>
 </header>
 <div class="header-drop-down js-drop-down">
-  <a href="/medical-services" class="service-menu-item">Medical Services</a>
-  <a href="/legal-services" class="service-menu-item">Legal Services</a>
-  <a href="/financial-services" class="service-menu-item">Financial Services</a>
-  <a href="/real-estate-services" class="service-menu-item">Real Estate Services</a>
+  <?php 
+    wp_nav_menu(array(
+      'theme_location' => 'business-listing',
+      'menu_class' => 'business_listing_menu'
+    ));
+  ?>
 </div>
 <div class="header-hmenu js-hmenu">
   <div class="header-hmenu__content js-hmenu__content">
