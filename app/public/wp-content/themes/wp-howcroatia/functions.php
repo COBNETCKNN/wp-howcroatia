@@ -19,6 +19,7 @@ add_theme_support('post-thumbnails');
 
 /* CUSTOM IMAGE SIZES */
 add_image_size('heroSection', 1920, 700, true);
+add_image_size('singlePost', 1920, 700, true);
 
 /* REGISTRATION OF NAV MENU */
 function custom_menus() {

@@ -84,6 +84,21 @@
             'has_archive' => true,
         ));
 
+        // Restaurants Custom Post Type
+        register_post_type('restaurants', array(
+            'public' => true,
+            'labels' => array(
+                'name' => 'Restaurants',
+                'add_new' => 'Add Restaurant',
+                'add_new_item' => 'Add New Restaurant',
+                'edit_item' => 'Edit Restaurant',
+                'all_items' => 'All Restaurants',
+                'singular_name' => 'Restaurant'
+            ),
+            'menu_icon' => 'dashicons-coffee',
+            'supports' => array('title', 'thumbnail'),
+        ));
+
 
 
     }
