@@ -1,5 +1,5 @@
 jQuery(function($){
-	$('#filter').change(function(){
+	$('#filter').change(function(e){
 		var filter = $('#filter');
 		$.ajax({
 			url:filter.attr('action'),

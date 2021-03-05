@@ -444,3 +444,110 @@ Stack trace:
 [05-Mar-2021 14:47:58 UTC] PHP Parse error:  syntax error, unexpected '<' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 68
 [05-Mar-2021 14:48:03 UTC] PHP Parse error:  syntax error, unexpected '<' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 67
 [05-Mar-2021 14:48:03 UTC] PHP Parse error:  syntax error, unexpected '<' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 67
+[05-Mar-2021 15:10:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:10:57 UTC] PHP Stack trace:
+[05-Mar-2021 15:10:57 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:10:57 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:10:57 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:10:57 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:10:57 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:10:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:10:57 UTC] PHP Stack trace:
+[05-Mar-2021 15:10:57 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:10:57 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:10:57 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:10:57 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:10:57 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:10:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:10:57 UTC] PHP Stack trace:
+[05-Mar-2021 15:10:57 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:10:57 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:10:57 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:10:57 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:10:57 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:05 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:05 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:05 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:05 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:05 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:05 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:05 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:05 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:05 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:05 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:05 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:05 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:05 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:05 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:05 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:05 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:05 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:05 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:07 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:07 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:07 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:07 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:07 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:07 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:07 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:07 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:07 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:07 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:07 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:07 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:07 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:07 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:07 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:07 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:07 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:07 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:08 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:08 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:08 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:08 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:08 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:08 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:08 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:08 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:08 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:08 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:08 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:08 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:08 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:08 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:08 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:08 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:08 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:08 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:09 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:09 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:09 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:09 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:09 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:09 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:09 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:09 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:09 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:09 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:09 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:09 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:11:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 85
+[05-Mar-2021 15:11:09 UTC] PHP Stack trace:
+[05-Mar-2021 15:11:09 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[05-Mar-2021 15:11:09 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:199
+[05-Mar-2021 15:11:09 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:11:09 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:11:09 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[05-Mar-2021 15:19:15 UTC] PHP Parse error:  syntax error, unexpected ''exclude'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
+[05-Mar-2021 15:19:16 UTC] PHP Parse error:  syntax error, unexpected ''exclude'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63

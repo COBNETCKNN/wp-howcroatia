@@ -59,7 +59,7 @@ function ajax_filter_function(){
 			array(
 				'taxonomy' => 'location',
 				'field' => 'id',
-				'terms' => $_POST['categoryfilter']
+				'terms' => $_POST['categoryfilter'],
 			)
 		);
  
