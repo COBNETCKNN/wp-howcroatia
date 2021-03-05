@@ -46,13 +46,10 @@
 ?>
 
 <!-- BLOG/MAGAZINE SECTION -->
-
-     
     <section class="featured-blog-articles">
-      <div class="container__howcroatia">
+      <div class="container mx-auto">
         <h2 class="section-heading pb-20">Featured articles</h2>
-      
-        <div class="grid grid-cols-3 gap-0 container__howcroatia">
+        <div class="block md:grid grid-cols-3 gap-0">
 
         <?php 
 

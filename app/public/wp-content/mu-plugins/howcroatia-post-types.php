@@ -5,7 +5,7 @@
     function howcroatia_post_types() {
 
         // Medical Services Custom Post Type
-        register_post_type('medical_services', array(
+        register_post_type('medical', array(
             'public' => true,
             'labels' => array(
                 'name' => 'Medical Services',
@@ -21,7 +21,7 @@
         ));
 
          // Legal Services Custom Post Type
-        register_post_type('legal_services', array(
+        register_post_type('legal', array(
             'public' => true,
             'labels' => array(
                 'name' => 'Legal Services',
@@ -37,7 +37,7 @@
         ));
 
         // Financial Services Custom Post Type
-        register_post_type('financial_services', array(
+        register_post_type('financial', array(
             'public' => true,
             'labels' => array(
                 'name' => 'Financial Services',
@@ -53,7 +53,7 @@
         ));
 
         // Real Estate Services Custom Post Type
-        register_post_type('real_estate_services', array(
+        register_post_type('estate', array(
             'public' => true,
             'labels' => array(
                 'name' => 'Real Estate Services',
@@ -69,14 +69,14 @@
         ));
 
         // Hotels and Luxury Rentals Custom Post Type
-        register_post_type('hotels_rentals', array(
+        register_post_type('hotel', array(
             'public' => true,
             'labels' => array(
                 'name' => 'Hotels and Luxury Rentals',
-                'add_new' => 'Add Hotel',
-                'add_new_item' => 'Add New Hotel',
-                'edit_item' => 'Edit Hotel',
-                'all_items' => 'All Hotels',
+                'add_new' => 'Add Hotel or Luxury Rental',
+                'add_new_item' => 'Add New Hotel or Luxury Rental',
+                'edit_item' => 'Edit Hotel or Luxury Rental',
+                'all_items' => 'All Hotels & Luxury Rentals',
                 'singular_name' => 'Hotel'
             ),
             'menu_icon' => 'dashicons-location',

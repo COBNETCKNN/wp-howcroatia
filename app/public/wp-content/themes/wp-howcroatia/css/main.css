@@ -184665,14 +184665,12 @@ textarea {
   top: 50%;
   right: -16px;
   transform: translateY(-50%);
-  margin-top: -1px;
+  margin-top: -5px;
 }
 
 .header__navigation__cta {
   color: #181818;
   background: #ffffff;
-  padding: 18px 20px;
-  margin-right: 0;
 }
 
 .container__howcroatia {

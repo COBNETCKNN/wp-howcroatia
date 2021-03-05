@@ -16,7 +16,7 @@
      <?php get_template_part('partials/svg', 'header-logo'); ?>
     </svg>
   </a>
-  <nav class="header__navigation">
+  <nav class="header__navigation pt-4">
       <?php 
         wp_nav_menu(array(
           'theme_location' => 'nav-menu',
@@ -24,6 +24,7 @@
         ));
       ?>
       <div class="business_listings header__navigation__link--expanding js-expanding-link">Business Listings</div>
+      <a href="mailto:sample@gmail.com" class="px-3 py-2 header__navigation__cta">Ask For Advice</a>
   </nav>
 </header>
 <div class="header-drop-down js-drop-down">
