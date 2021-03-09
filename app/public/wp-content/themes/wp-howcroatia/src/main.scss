@@ -745,11 +745,6 @@ textarea {
   justify-content: center;
   transition: fill, background-color 0.5s ease;
   fill: #393533;
-  margin-right: 24px;
-}
-
-.social-links__link:last-of-type {
-  margin-right: 0;
 }
 
 .social-links__link:hover {
@@ -839,7 +834,7 @@ textarea {
   letter-spacing: .15em;
   text-transform: uppercase;
   display: block;
-  margin: 126px auto 0;
+  margin: 0px auto 0;
   outline: none;
   border: none;
   cursor: pointer;
@@ -963,7 +958,7 @@ textarea {
 
 .rental-articles,
 .service-articles {
-  padding: 238px 0 126px 0;
+  padding: 238px 0 0 0;
 }
 
 .filter-selectors__filter--light > .filter-selectors__filter__label {

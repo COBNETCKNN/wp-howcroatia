@@ -551,3 +551,275 @@ Stack trace:
 [05-Mar-2021 15:11:09 UTC] PHP   5. ajax_filter_function() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
 [05-Mar-2021 15:19:15 UTC] PHP Parse error:  syntax error, unexpected ''exclude'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
 [05-Mar-2021 15:19:16 UTC] PHP Parse error:  syntax error, unexpected ''exclude'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
+[05-Mar-2021 15:38:43 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'install_wpct' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php on line 287
+[05-Mar-2021 15:38:43 UTC] PHP Stack trace:
+[05-Mar-2021 15:38:43 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\plugins.php:0
+[05-Mar-2021 15:38:43 UTC] PHP   2. activate_plugin() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\plugins.php:58
+[05-Mar-2021 15:38:43 UTC] PHP   3. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\includes\plugin.php:701
+[05-Mar-2021 15:38:43 UTC] PHP   4. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:38:43 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[05-Mar-2021 15:39:58 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'uninstall_wpct' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php on line 287
+[05-Mar-2021 15:39:58 UTC] PHP Stack trace:
+[05-Mar-2021 15:39:58 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\plugins.php:0
+[05-Mar-2021 15:39:58 UTC] PHP   2. deactivate_plugins() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\plugins.php:208
+[05-Mar-2021 15:39:58 UTC] PHP   3. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\includes\plugin.php:823
+[05-Mar-2021 15:39:58 UTC] PHP   4. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[05-Mar-2021 15:39:58 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[08-Mar-2021 20:45:53 UTC] PHP Parse error:  syntax error, unexpected ''posts_per_page'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\front-page.php on line 95
+[08-Mar-2021 20:45:53 UTC] PHP Parse error:  syntax error, unexpected ''posts_per_page'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\front-page.php on line 95
+[08-Mar-2021 22:42:35 UTC] PHP Warning:  require_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:42:35 UTC] PHP Warning:  require_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:42:35 UTC] PHP Stack trace:
+[08-Mar-2021 22:42:35 UTC] PHP Stack trace:
+[08-Mar-2021 22:42:35 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:42:35 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:0
+[08-Mar-2021 22:42:35 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:42:35 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:10
+[08-Mar-2021 22:42:35 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:42:35 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:34
+[08-Mar-2021 22:42:35 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:42:35 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:42:35 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:42:35 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:42:35 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:42:35 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:42:36 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:42:36 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:42:36 UTC] PHP Stack trace:
+[08-Mar-2021 22:42:36 UTC] PHP Stack trace:
+[08-Mar-2021 22:42:36 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:42:36 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:0
+[08-Mar-2021 22:42:36 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:42:36 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:10
+[08-Mar-2021 22:42:36 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:42:36 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:34
+[08-Mar-2021 22:42:36 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:42:36 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:42:36 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:42:36 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:42:36 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:42:36 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:42:36 UTC] PHP Warning:  require_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:42:36 UTC] PHP Stack trace:
+[08-Mar-2021 22:42:36 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:42:36 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:42:36 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:42:36 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:42:36 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:42:36 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:42:36 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:42:36 UTC] PHP Stack trace:
+[08-Mar-2021 22:42:36 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:42:36 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:42:36 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:42:36 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:42:36 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:42:36 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:42:36 UTC] PHP Warning:  require_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:42:36 UTC] PHP Stack trace:
+[08-Mar-2021 22:42:36 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:42:36 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:42:36 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:42:36 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:42:36 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:42:36 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:42:36 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:42:36 UTC] PHP Stack trace:
+[08-Mar-2021 22:42:36 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:42:36 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:42:36 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:42:36 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:42:36 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:42:36 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:43:29 UTC] PHP Warning:  include_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:43:29 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:29 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:0
+[08-Mar-2021 22:43:29 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:10
+[08-Mar-2021 22:43:29 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:34
+[08-Mar-2021 22:43:29 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:43:29 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:43:29 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:43:29 UTC] PHP Warning:  include_once(): Failed opening 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:43:29 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:29 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:0
+[08-Mar-2021 22:43:29 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:10
+[08-Mar-2021 22:43:29 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:34
+[08-Mar-2021 22:43:29 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:43:29 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:43:29 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:43:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php:50) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\functions.php on line 6360
+[08-Mar-2021 22:43:29 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:29 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:0
+[08-Mar-2021 22:43:29 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:10
+[08-Mar-2021 22:43:29 UTC] PHP   3. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:175
+[08-Mar-2021 22:43:29 UTC] PHP   4. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[08-Mar-2021 22:43:29 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[08-Mar-2021 22:43:29 UTC] PHP   6. send_frame_options_header() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:285
+[08-Mar-2021 22:43:29 UTC] PHP   7. header() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\functions.php:6360
+[08-Mar-2021 22:43:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php:50) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\includes\misc.php on line 1310
+[08-Mar-2021 22:43:29 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:29 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:0
+[08-Mar-2021 22:43:29 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:10
+[08-Mar-2021 22:43:29 UTC] PHP   3. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:175
+[08-Mar-2021 22:43:29 UTC] PHP   4. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[08-Mar-2021 22:43:29 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[08-Mar-2021 22:43:29 UTC] PHP   6. wp_admin_headers() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[08-Mar-2021 22:43:29 UTC] PHP   7. header() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\includes\misc.php:1310
+[08-Mar-2021 22:43:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php:50) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-header.php on line 9
+[08-Mar-2021 22:43:29 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:29 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:0
+[08-Mar-2021 22:43:29 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:75
+[08-Mar-2021 22:43:29 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\edit-form-advanced.php:425
+[08-Mar-2021 22:43:29 UTC] PHP   4. header() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-header.php:9
+[08-Mar-2021 22:43:30 UTC] PHP Warning:  include_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:43:30 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:30 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:43:30 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:43:30 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:43:30 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:43:30 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:43:30 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:43:30 UTC] PHP Warning:  include_once(): Failed opening 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:43:30 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:30 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:43:30 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:43:30 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:43:30 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:43:30 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:43:30 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:43:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php:50) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\pluggable.php on line 1296
+[08-Mar-2021 22:43:31 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:31 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:43:31 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:43:31 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:19
+[08-Mar-2021 22:43:31 UTC] PHP   4. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template-loader.php:45
+[08-Mar-2021 22:43:31 UTC] PHP   5. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[08-Mar-2021 22:43:31 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[08-Mar-2021 22:43:31 UTC] PHP   7. do_favicon() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[08-Mar-2021 22:43:31 UTC] PHP   8. wp_redirect() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\functions.php:1687
+[08-Mar-2021 22:43:31 UTC] PHP   9. header() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\pluggable.php:1296
+[08-Mar-2021 22:43:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php:50) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\pluggable.php on line 1299
+[08-Mar-2021 22:43:31 UTC] PHP Stack trace:
+[08-Mar-2021 22:43:31 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:43:31 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:43:31 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:19
+[08-Mar-2021 22:43:31 UTC] PHP   4. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template-loader.php:45
+[08-Mar-2021 22:43:31 UTC] PHP   5. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[08-Mar-2021 22:43:31 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[08-Mar-2021 22:43:31 UTC] PHP   7. do_favicon() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[08-Mar-2021 22:43:31 UTC] PHP   8. wp_redirect() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\functions.php:1687
+[08-Mar-2021 22:43:31 UTC] PHP   9. header() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\pluggable.php:1299
+[08-Mar-2021 22:45:31 UTC] PHP Warning:  include_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:45:31 UTC] PHP Stack trace:
+[08-Mar-2021 22:45:31 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[08-Mar-2021 22:45:31 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:22
+[08-Mar-2021 22:45:31 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:45:31 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:45:31 UTC] PHP   5. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:45:31 UTC] PHP Warning:  include_once(): Failed opening 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public/wp-content/themes/wp-howcroatiaajax/ajax-hotel.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 50
+[08-Mar-2021 22:45:31 UTC] PHP Stack trace:
+[08-Mar-2021 22:45:31 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:0
+[08-Mar-2021 22:45:31 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin-ajax.php:22
+[08-Mar-2021 22:45:31 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:45:31 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:45:31 UTC] PHP   5. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:48:45 UTC] PHP Fatal error:  Cannot redeclare hotelsRentalsLocationTaxonomy() (previously declared in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\custom-taxonomies.php:4) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\custom-taxonomies.php on line 24
+[08-Mar-2021 22:48:45 UTC] PHP Stack trace:
+[08-Mar-2021 22:48:45 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:0
+[08-Mar-2021 22:48:45 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\post-new.php:10
+[08-Mar-2021 22:48:45 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:34
+[08-Mar-2021 22:48:45 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:48:45 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:48:45 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[08-Mar-2021 22:48:45 UTC] PHP Fatal error:  Cannot redeclare hotelsRentalsLocationTaxonomy() (previously declared in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\custom-taxonomies.php:4) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\custom-taxonomies.php on line 24
+[08-Mar-2021 22:48:45 UTC] PHP Stack trace:
+[08-Mar-2021 22:48:45 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[08-Mar-2021 22:48:45 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[08-Mar-2021 22:48:45 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[08-Mar-2021 22:48:45 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[08-Mar-2021 22:48:45 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[08-Mar-2021 22:48:45 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[09-Mar-2021 14:32:53 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\header.php:15
+Stack trace:
+#0 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template.php(730): require_once()
+#1 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template.php(676): load_template('C:\\Users\\COBNET...', true, Array)
+#2 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\front-page.php(1): get_header()
+#4 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\COBNET...')
+#5 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php(19): require_once('C:\\Users\\COBNET...')
+#6 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php(17): require('C:\\Users\\COBNET...')
+#7 {main}
+   in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\header.php on line 15
+[09-Mar-2021 14:41:10 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\index.php on line 75
+[09-Mar-2021 15:36:50 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 83
+[09-Mar-2021 15:37:28 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 83
+[09-Mar-2021 15:37:44 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 83
+[09-Mar-2021 15:39:19 UTC] PHP Parse error:  syntax error, unexpected ''http://www.facebook.com/share' (T_CONSTANT_ENCAPSED_STRING) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 83
+[09-Mar-2021 15:41:12 UTC] PHP Parse error:  syntax error, unexpected '?>' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 83
+[09-Mar-2021 15:41:23 UTC] PHP Parse error:  syntax error, unexpected '?>' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 83
+[09-Mar-2021 15:50:04 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'social_share_page' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php on line 287
+[09-Mar-2021 15:50:04 UTC] PHP Stack trace:
+[09-Mar-2021 15:50:04 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\options-general.php:0
+[09-Mar-2021 15:50:04 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\options-general.php:10
+[09-Mar-2021 15:50:04 UTC] PHP   3. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:259
+[09-Mar-2021 15:50:04 UTC] PHP   4. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[09-Mar-2021 15:50:04 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[09-Mar-2021 15:50:39 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'social_share_page' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php on line 287
+[09-Mar-2021 15:50:39 UTC] PHP Stack trace:
+[09-Mar-2021 15:50:39 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\options-general.php:0
+[09-Mar-2021 15:50:39 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\options-general.php:10
+[09-Mar-2021 15:50:39 UTC] PHP   3. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:259
+[09-Mar-2021 15:50:39 UTC] PHP   4. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[09-Mar-2021 15:50:39 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[09-Mar-2021 15:50:42 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'social_share_page' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php on line 287
+[09-Mar-2021 15:50:42 UTC] PHP Stack trace:
+[09-Mar-2021 15:50:42 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\options-general.php:0
+[09-Mar-2021 15:50:42 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\options-general.php:10
+[09-Mar-2021 15:50:42 UTC] PHP   3. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:259
+[09-Mar-2021 15:50:42 UTC] PHP   4. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[09-Mar-2021 15:50:42 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[09-Mar-2021 15:51:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'social_share_page' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php on line 287
+[09-Mar-2021 15:51:38 UTC] PHP Stack trace:
+[09-Mar-2021 15:51:38 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\options-general.php:0
+[09-Mar-2021 15:51:38 UTC] PHP   2. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\options-general.php:10
+[09-Mar-2021 15:51:38 UTC] PHP   3. do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-admin\admin.php:259
+[09-Mar-2021 15:51:38 UTC] PHP   4. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
+[09-Mar-2021 15:51:38 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
+[09-Mar-2021 16:03:00 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 77
+[09-Mar-2021 16:03:40 UTC] PHP Parse error:  syntax error, unexpected 'the_permalink' (T_STRING) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 77
+[09-Mar-2021 16:04:02 UTC] PHP Parse error:  syntax error, unexpected 'the_permalink' (T_STRING) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 77
+[09-Mar-2021 16:05:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function phpthe_permalink() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php:77
+Stack trace:
+#0 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php(19): require_once('C:\\Users\\COBNET...')
+#2 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php(17): require('C:\\Users\\COBNET...')
+#3 {main}
+  thrown in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 77
+[09-Mar-2021 16:06:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function phpthe_permalink() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php:77
+Stack trace:
+#0 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php(19): require_once('C:\\Users\\COBNET...')
+#2 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php(17): require('C:\\Users\\COBNET...')
+#3 {main}
+  thrown in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 77
+[09-Mar-2021 16:20:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function phpthe_permalink() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php:76
+Stack trace:
+#0 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php(19): require_once('C:\\Users\\COBNET...')
+#2 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php(17): require('C:\\Users\\COBNET...')
+#3 {main}
+  thrown in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 76
+[09-Mar-2021 16:21:58 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 76
+[09-Mar-2021 16:22:08 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 76
+[09-Mar-2021 16:22:21 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 76
+[09-Mar-2021 16:40:55 UTC] PHP Parse error:  syntax error, unexpected 'title' (T_STRING) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 76
+[09-Mar-2021 16:42:30 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 73
+[09-Mar-2021 16:43:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_post_permalink() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php:73
+Stack trace:
+#0 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php(19): require_once('C:\\Users\\COBNET...')
+#2 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php(17): require('C:\\Users\\COBNET...')
+#3 {main}
+  thrown in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 73
+[09-Mar-2021 18:02:56 UTC] PHP Parse error:  syntax error, unexpected '$siteName' (T_VARIABLE) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 77
+[09-Mar-2021 18:03:33 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 80

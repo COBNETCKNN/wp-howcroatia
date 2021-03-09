@@ -1,4 +1,4 @@
-<article class="blog-article mx-auto p-2 mb-8">
+<article class="blog-article mx-auto pb-20">
   <figure class="visual-container">
     <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="Sea">
   </figure>

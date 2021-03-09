@@ -133,7 +133,7 @@ CREATE TABLE `wp_options` (
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`),
   KEY `autoload` (`autoload`)
-) ENGINE=InnoDB AUTO_INCREMENT=259 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=312 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -174,7 +174,7 @@ INSERT INTO `wp_options` VALUES (29,'rewrite_rules','a:226:{s:11:\"^wp-json/?$\"
 INSERT INTO `wp_options` VALUES (30,'hack_file','0','yes');
 INSERT INTO `wp_options` VALUES (31,'blog_charset','UTF-8','yes');
 INSERT INTO `wp_options` VALUES (32,'moderation_keys','','no');
-INSERT INTO `wp_options` VALUES (33,'active_plugins','a:4:{i:0;s:41:\"advanced-custom-fields-pro-master/acf.php\";i:1;s:33:\"classic-editor/classic-editor.php\";i:2;s:35:\"crop-thumbnails/crop-thumbnails.php\";i:3;s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";}','yes');
+INSERT INTO `wp_options` VALUES (33,'active_plugins','a:3:{i:0;s:41:\"advanced-custom-fields-pro-master/acf.php\";i:1;s:35:\"crop-thumbnails/crop-thumbnails.php\";i:2;s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";}','yes');
 INSERT INTO `wp_options` VALUES (34,'category_base','','yes');
 INSERT INTO `wp_options` VALUES (35,'ping_sites','http://rpc.pingomatic.com/','yes');
 INSERT INTO `wp_options` VALUES (36,'comment_max_links','2','yes');
@@ -248,7 +248,7 @@ INSERT INTO `wp_options` VALUES (103,'widget_recent-comments','a:2:{i:2;a:2:{s:5
 INSERT INTO `wp_options` VALUES (104,'widget_archives','a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}','yes');
 INSERT INTO `wp_options` VALUES (105,'widget_meta','a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}','yes');
 INSERT INTO `wp_options` VALUES (106,'sidebars_widgets','a:2:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}','yes');
-INSERT INTO `wp_options` VALUES (107,'cron','a:6:{i:1614905342;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1614944942;a:4:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1614945895;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1614945896;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1615031342;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}','yes');
+INSERT INTO `wp_options` VALUES (107,'cron','a:6:{i:1615250942;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1615290542;a:4:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1615291495;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1615291496;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1615636142;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}','yes');
 INSERT INTO `wp_options` VALUES (108,'widget_pages','a:1:{s:12:\"_multiwidget\";i:1;}','yes');
 INSERT INTO `wp_options` VALUES (109,'widget_calendar','a:1:{s:12:\"_multiwidget\";i:1;}','yes');
 INSERT INTO `wp_options` VALUES (110,'widget_media_audio','a:1:{s:12:\"_multiwidget\";i:1;}','yes');
@@ -260,14 +260,10 @@ INSERT INTO `wp_options` VALUES (115,'nonce_salt','U3hiuYuv4@f0&J-g~0b/5kR;`UVO<
 INSERT INTO `wp_options` VALUES (116,'widget_tag_cloud','a:1:{s:12:\"_multiwidget\";i:1;}','yes');
 INSERT INTO `wp_options` VALUES (117,'widget_nav_menu','a:1:{s:12:\"_multiwidget\";i:1;}','yes');
 INSERT INTO `wp_options` VALUES (118,'widget_custom_html','a:1:{s:12:\"_multiwidget\";i:1;}','yes');
-INSERT INTO `wp_options` VALUES (120,'recovery_keys','a:0:{}','yes');
-INSERT INTO `wp_options` VALUES (121,'_site_transient_update_core','O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.6.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.6.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.6.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.6.2-new-bundled.zip\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.6.2\";s:7:\"version\";s:5:\"5.6.2\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1614902053;s:15:\"version_checked\";s:5:\"5.6.2\";s:12:\"translations\";a:0:{}}','no');
-INSERT INTO `wp_options` VALUES (126,'_site_transient_update_themes','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1614902055;s:7:\"checked\";a:1:{s:13:\"wp-howcroatia\";s:0:\"\";}s:8:\"response\";a:0:{}s:9:\"no_update\";a:0:{}s:12:\"translations\";a:0:{}}','no');
+INSERT INTO `wp_options` VALUES (120,'recovery_keys','a:1:{s:22:\"2BwFqUsTacHY2fcJiDRUsK\";a:2:{s:10:\"hashed_key\";s:34:\"$P$Bpdqd9AeqKHmf8Zu913/VHi9sBg6QV/\";s:10:\"created_at\";i:1615243356;}}','yes');
+INSERT INTO `wp_options` VALUES (121,'_site_transient_update_core','O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.6.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.6.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.6.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.6.2-new-bundled.zip\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.6.2\";s:7:\"version\";s:5:\"5.6.2\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1615247431;s:15:\"version_checked\";s:5:\"5.6.2\";s:12:\"translations\";a:0:{}}','no');
+INSERT INTO `wp_options` VALUES (126,'_site_transient_update_themes','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1615247433;s:7:\"checked\";a:1:{s:13:\"wp-howcroatia\";s:0:\"\";}s:8:\"response\";a:0:{}s:9:\"no_update\";a:0:{}s:12:\"translations\";a:0:{}}','no');
 INSERT INTO `wp_options` VALUES (127,'theme_mods_twentytwentyone','a:2:{s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1614341228;s:4:\"data\";a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:3:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";}s:9:\"sidebar-2\";a:3:{i:0;s:10:\"archives-2\";i:1;s:12:\"categories-2\";i:2;s:6:\"meta-2\";}}}}','yes');
-INSERT INTO `wp_options` VALUES (128,'_site_transient_timeout_browser_0dfb3ef9c1b48f7db77c2e3064864c91','1614945895','no');
-INSERT INTO `wp_options` VALUES (129,'_site_transient_browser_0dfb3ef9c1b48f7db77c2e3064864c91','a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"88.0.4324.190\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}','no');
-INSERT INTO `wp_options` VALUES (130,'_site_transient_timeout_php_check_472f71d2a071d463a95f84346288dc89','1614945896','no');
-INSERT INTO `wp_options` VALUES (131,'_site_transient_php_check_472f71d2a071d463a95f84346288dc89','a:5:{s:19:\"recommended_version\";s:3:\"7.4\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}','no');
 INSERT INTO `wp_options` VALUES (145,'can_compress_scripts','1','no');
 INSERT INTO `wp_options` VALUES (148,'finished_updating_comment_type','1','yes');
 INSERT INTO `wp_options` VALUES (149,'current_theme','HowCroatia','yes');
@@ -275,16 +271,23 @@ INSERT INTO `wp_options` VALUES (150,'theme_mods_wp-howcroatia','a:4:{i:0;b:0;s:
 INSERT INTO `wp_options` VALUES (151,'theme_switched','','yes');
 INSERT INTO `wp_options` VALUES (153,'theme_mods_twentynineteen','a:3:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1614341859;s:4:\"data\";a:2:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:9:\"sidebar-1\";a:0:{}}}}','yes');
 INSERT INTO `wp_options` VALUES (160,'nav_menu_options','a:2:{i:0;b:0;s:8:\"auto_add\";a:0:{}}','yes');
-INSERT INTO `wp_options` VALUES (173,'_transient_health-check-site-status-result','{\"good\":\"13\",\"recommended\":\"6\",\"critical\":\"0\"}','yes');
-INSERT INTO `wp_options` VALUES (174,'recently_activated','a:0:{}','yes');
+INSERT INTO `wp_options` VALUES (173,'_transient_health-check-site-status-result','{\"good\":\"11\",\"recommended\":\"6\",\"critical\":\"2\"}','yes');
+INSERT INTO `wp_options` VALUES (174,'recently_activated','a:2:{s:26:\"wp-clone-template/main.php\";i:1614958798;s:33:\"classic-editor/classic-editor.php\";i:1614958688;}','yes');
 INSERT INTO `wp_options` VALUES (179,'acf_version','5.8.7','yes');
 INSERT INTO `wp_options` VALUES (202,'category_children','a:0:{}','yes');
-INSERT INTO `wp_options` VALUES (231,'_transient_timeout_acf_plugin_updates','1614948374','no');
-INSERT INTO `wp_options` VALUES (232,'_transient_acf_plugin_updates','a:4:{s:7:\"plugins\";a:1:{s:41:\"advanced-custom-fields-pro-master/acf.php\";a:8:{s:4:\"slug\";s:26:\"advanced-custom-fields-pro\";s:6:\"plugin\";s:41:\"advanced-custom-fields-pro-master/acf.php\";s:11:\"new_version\";s:5:\"5.9.5\";s:3:\"url\";s:36:\"https://www.advancedcustomfields.com\";s:6:\"tested\";s:3:\"5.6\";s:7:\"package\";s:0:\"\";s:5:\"icons\";a:1:{s:7:\"default\";s:63:\"https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png\";}s:7:\"banners\";a:2:{s:3:\"low\";s:77:\"https://ps.w.org/advanced-custom-fields/assets/banner-772x250.jpg?rev=1729102\";s:4:\"high\";s:78:\"https://ps.w.org/advanced-custom-fields/assets/banner-1544x500.jpg?rev=1729099\";}}}s:10:\"expiration\";i:172800;s:6:\"status\";i:1;s:7:\"checked\";a:1:{s:41:\"advanced-custom-fields-pro-master/acf.php\";s:5:\"5.8.7\";}}','no');
 INSERT INTO `wp_options` VALUES (250,'location_children','a:0:{}','yes');
-INSERT INTO `wp_options` VALUES (256,'_site_transient_timeout_theme_roots','1614903855','no');
-INSERT INTO `wp_options` VALUES (257,'_site_transient_theme_roots','a:1:{s:13:\"wp-howcroatia\";s:7:\"/themes\";}','no');
-INSERT INTO `wp_options` VALUES (258,'_site_transient_update_plugins','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1614902057;s:7:\"checked\";a:4:{s:41:\"advanced-custom-fields-pro-master/acf.php\";s:5:\"5.8.7\";s:33:\"classic-editor/classic-editor.php\";s:3:\"1.6\";s:35:\"crop-thumbnails/crop-thumbnails.php\";s:5:\"1.3.0\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:5:\"3.1.4\";}s:8:\"response\";a:1:{s:41:\"advanced-custom-fields-pro-master/acf.php\";O:8:\"stdClass\":8:{s:4:\"slug\";s:26:\"advanced-custom-fields-pro\";s:6:\"plugin\";s:41:\"advanced-custom-fields-pro-master/acf.php\";s:11:\"new_version\";s:5:\"5.9.5\";s:3:\"url\";s:36:\"https://www.advancedcustomfields.com\";s:6:\"tested\";s:3:\"5.6\";s:7:\"package\";s:0:\"\";s:5:\"icons\";a:1:{s:7:\"default\";s:63:\"https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png\";}s:7:\"banners\";a:2:{s:3:\"low\";s:77:\"https://ps.w.org/advanced-custom-fields/assets/banner-772x250.jpg?rev=1729102\";s:4:\"high\";s:78:\"https://ps.w.org/advanced-custom-fields/assets/banner-1544x500.jpg?rev=1729099\";}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:3:{s:33:\"classic-editor/classic-editor.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:28:\"w.org/plugins/classic-editor\";s:4:\"slug\";s:14:\"classic-editor\";s:6:\"plugin\";s:33:\"classic-editor/classic-editor.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/classic-editor/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/plugin/classic-editor.1.6.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-256x256.png?rev=1998671\";s:2:\"1x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-128x128.png?rev=1998671\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/classic-editor/assets/banner-1544x500.png?rev=1998671\";s:2:\"1x\";s:69:\"https://ps.w.org/classic-editor/assets/banner-772x250.png?rev=1998676\";}s:11:\"banners_rtl\";a:0:{}}s:35:\"crop-thumbnails/crop-thumbnails.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:29:\"w.org/plugins/crop-thumbnails\";s:4:\"slug\";s:15:\"crop-thumbnails\";s:6:\"plugin\";s:35:\"crop-thumbnails/crop-thumbnails.php\";s:11:\"new_version\";s:5:\"1.3.0\";s:3:\"url\";s:46:\"https://wordpress.org/plugins/crop-thumbnails/\";s:7:\"package\";s:64:\"https://downloads.wordpress.org/plugin/crop-thumbnails.1.3.0.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:60:\"https://ps.w.org/crop-thumbnails/assets/icon.svg?rev=1228698\";s:3:\"svg\";s:60:\"https://ps.w.org/crop-thumbnails/assets/icon.svg?rev=1228698\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/crop-thumbnails/assets/banner-1544x500.jpg?rev=626571\";s:2:\"1x\";s:69:\"https://ps.w.org/crop-thumbnails/assets/banner-772x250.jpg?rev=626571\";}s:11:\"banners_rtl\";a:0:{}}s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:35:\"w.org/plugins/regenerate-thumbnails\";s:4:\"slug\";s:21:\"regenerate-thumbnails\";s:6:\"plugin\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:11:\"new_version\";s:5:\"3.1.4\";s:3:\"url\";s:52:\"https://wordpress.org/plugins/regenerate-thumbnails/\";s:7:\"package\";s:70:\"https://downloads.wordpress.org/plugin/regenerate-thumbnails.3.1.4.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:74:\"https://ps.w.org/regenerate-thumbnails/assets/icon-128x128.png?rev=1753390\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/regenerate-thumbnails/assets/banner-1544x500.jpg?rev=1753390\";s:2:\"1x\";s:76:\"https://ps.w.org/regenerate-thumbnails/assets/banner-772x250.jpg?rev=1753390\";}s:11:\"banners_rtl\";a:0:{}}}}','no');
+INSERT INTO `wp_options` VALUES (269,'_site_transient_timeout_browser_0dfb3ef9c1b48f7db77c2e3064864c91','1615563470','no');
+INSERT INTO `wp_options` VALUES (270,'_site_transient_browser_0dfb3ef9c1b48f7db77c2e3064864c91','a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"88.0.4324.190\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}','no');
+INSERT INTO `wp_options` VALUES (271,'_site_transient_timeout_php_check_472f71d2a071d463a95f84346288dc89','1615563470','no');
+INSERT INTO `wp_options` VALUES (272,'_site_transient_php_check_472f71d2a071d463a95f84346288dc89','a:5:{s:19:\"recommended_version\";s:3:\"7.4\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}','no');
+INSERT INTO `wp_options` VALUES (290,'_transient_timeout_acf_plugin_updates','1615394937','no');
+INSERT INTO `wp_options` VALUES (291,'_transient_acf_plugin_updates','a:4:{s:7:\"plugins\";a:1:{s:41:\"advanced-custom-fields-pro-master/acf.php\";a:8:{s:4:\"slug\";s:26:\"advanced-custom-fields-pro\";s:6:\"plugin\";s:41:\"advanced-custom-fields-pro-master/acf.php\";s:11:\"new_version\";s:5:\"5.9.5\";s:3:\"url\";s:36:\"https://www.advancedcustomfields.com\";s:6:\"tested\";s:3:\"5.6\";s:7:\"package\";s:0:\"\";s:5:\"icons\";a:1:{s:7:\"default\";s:63:\"https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png\";}s:7:\"banners\";a:2:{s:3:\"low\";s:77:\"https://ps.w.org/advanced-custom-fields/assets/banner-772x250.jpg?rev=1729102\";s:4:\"high\";s:78:\"https://ps.w.org/advanced-custom-fields/assets/banner-1544x500.jpg?rev=1729099\";}}}s:10:\"expiration\";i:172800;s:6:\"status\";i:1;s:7:\"checked\";a:1:{s:41:\"advanced-custom-fields-pro-master/acf.php\";s:5:\"5.8.7\";}}','no');
+INSERT INTO `wp_options` VALUES (299,'recovery_mode_email_last_sent','1615243356','yes');
+INSERT INTO `wp_options` VALUES (302,'service_children','a:0:{}','yes');
+INSERT INTO `wp_options` VALUES (306,'location-financial_children','a:0:{}','yes');
+INSERT INTO `wp_options` VALUES (309,'_site_transient_timeout_theme_roots','1615249232','no');
+INSERT INTO `wp_options` VALUES (310,'_site_transient_theme_roots','a:1:{s:13:\"wp-howcroatia\";s:7:\"/themes\";}','no');
+INSERT INTO `wp_options` VALUES (311,'_site_transient_update_plugins','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1615247433;s:7:\"checked\";a:3:{s:41:\"advanced-custom-fields-pro-master/acf.php\";s:5:\"5.8.7\";s:35:\"crop-thumbnails/crop-thumbnails.php\";s:5:\"1.3.0\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:5:\"3.1.4\";}s:8:\"response\";a:2:{s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:35:\"w.org/plugins/regenerate-thumbnails\";s:4:\"slug\";s:21:\"regenerate-thumbnails\";s:6:\"plugin\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:11:\"new_version\";s:5:\"3.1.5\";s:3:\"url\";s:52:\"https://wordpress.org/plugins/regenerate-thumbnails/\";s:7:\"package\";s:70:\"https://downloads.wordpress.org/plugin/regenerate-thumbnails.3.1.5.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:74:\"https://ps.w.org/regenerate-thumbnails/assets/icon-128x128.png?rev=1753390\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/regenerate-thumbnails/assets/banner-1544x500.jpg?rev=1753390\";s:2:\"1x\";s:76:\"https://ps.w.org/regenerate-thumbnails/assets/banner-772x250.jpg?rev=1753390\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:3:\"5.7\";s:12:\"requires_php\";s:5:\"5.2.4\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:41:\"advanced-custom-fields-pro-master/acf.php\";O:8:\"stdClass\":8:{s:4:\"slug\";s:26:\"advanced-custom-fields-pro\";s:6:\"plugin\";s:41:\"advanced-custom-fields-pro-master/acf.php\";s:11:\"new_version\";s:5:\"5.9.5\";s:3:\"url\";s:36:\"https://www.advancedcustomfields.com\";s:6:\"tested\";s:3:\"5.6\";s:7:\"package\";s:0:\"\";s:5:\"icons\";a:1:{s:7:\"default\";s:63:\"https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png\";}s:7:\"banners\";a:2:{s:3:\"low\";s:77:\"https://ps.w.org/advanced-custom-fields/assets/banner-772x250.jpg?rev=1729102\";s:4:\"high\";s:78:\"https://ps.w.org/advanced-custom-fields/assets/banner-1544x500.jpg?rev=1729099\";}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:1:{s:35:\"crop-thumbnails/crop-thumbnails.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:29:\"w.org/plugins/crop-thumbnails\";s:4:\"slug\";s:15:\"crop-thumbnails\";s:6:\"plugin\";s:35:\"crop-thumbnails/crop-thumbnails.php\";s:11:\"new_version\";s:5:\"1.3.0\";s:3:\"url\";s:46:\"https://wordpress.org/plugins/crop-thumbnails/\";s:7:\"package\";s:64:\"https://downloads.wordpress.org/plugin/crop-thumbnails.1.3.0.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:60:\"https://ps.w.org/crop-thumbnails/assets/icon.svg?rev=1228698\";s:3:\"svg\";s:60:\"https://ps.w.org/crop-thumbnails/assets/icon.svg?rev=1228698\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/crop-thumbnails/assets/banner-1544x500.jpg?rev=626571\";s:2:\"1x\";s:69:\"https://ps.w.org/crop-thumbnails/assets/banner-772x250.jpg?rev=626571\";}s:11:\"banners_rtl\";a:0:{}}}}','no');
 /*!40000 ALTER TABLE `wp_options` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -303,7 +306,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=389 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=416 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -312,8 +315,8 @@ CREATE TABLE `wp_postmeta` (
 
 LOCK TABLES `wp_postmeta` WRITE;
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */;
-INSERT INTO `wp_postmeta` VALUES (9,7,'_edit_lock','1614779306:1');
-INSERT INTO `wp_postmeta` VALUES (10,9,'_edit_lock','1614616171:1');
+INSERT INTO `wp_postmeta` VALUES (9,7,'_edit_lock','1615041205:1');
+INSERT INTO `wp_postmeta` VALUES (10,9,'_edit_lock','1614959861:1');
 INSERT INTO `wp_postmeta` VALUES (11,11,'_menu_item_type','post_type');
 INSERT INTO `wp_postmeta` VALUES (12,11,'_menu_item_menu_item_parent','0');
 INSERT INTO `wp_postmeta` VALUES (13,11,'_menu_item_object_id','7');
@@ -382,7 +385,7 @@ INSERT INTO `wp_postmeta` VALUES (187,7,'_edit_last','1');
 INSERT INTO `wp_postmeta` VALUES (188,7,'_thumbnail_id','67');
 INSERT INTO `wp_postmeta` VALUES (189,41,'_edit_last','1');
 INSERT INTO `wp_postmeta` VALUES (190,41,'_edit_lock','1614540702:1');
-INSERT INTO `wp_postmeta` VALUES (201,7,'about_us_text','We are an online business lifestyle magazine and business directory. We cover topics all-around living, doing business, and spending holidays in Croatia.\r\n\r\nAt HOW!CROATIA, we believe that people visiting Croatia deserve the best insider knowledge, support, and tips for a great vacation or business experience.\r\n\r\nTherefore In addition to our Magazine content, our Business Directory is offering a wide range of experts which will help you to get things done in Croatia.\r\n\r\nOur selection of Croatia\'s finest hotels and Luxury Rentals will satisfy even those with the highest demands. After all, life is too short not to enjoy a bit of luxury.');
+INSERT INTO `wp_postmeta` VALUES (201,7,'about_us_text','We are an online business lifestyle magazine and business directory. We cover topics all-around living, doing business, and spending holidays in Croatia.\r\n\r\nAt HOW!CROATIA, we believe that people visiting Croatia deserve the best insider knowledge, support, and tips for a great vacation or business experience.\r\n\r\nTherefore In addition to our Magazine content, our Business Directory is offering a wide range of experts which will help you to get things done in Croatia.\r\n\r\nOur selection of Croatia\'s finest hotels and Luxury Rentals will satisfy even those with the highest demands. After all, life is too short not to enjoy a bit of luxury.\r\n');
 INSERT INTO `wp_postmeta` VALUES (202,7,'_about_us_text','field_603beadf23f8f');
 INSERT INTO `wp_postmeta` VALUES (203,44,'about_us_text','We are an online business lifestyle magazine and business directory. We cover topics all-around living, doing business, and spending holidays in Croatia.\r\nAt HOW!CROATIA, we believe that people visiting Croatia deserve the best insider knowledge, support, and tips for a great vacation or business experience.\r\nTherefore In addition to our Magazine content, our Business Directory is offering a wide range of experts which will help you to get things done in Croatia.\r\nOur selection of Croatia\'s finest hotels and Luxury Rentals will satisfy even those with the highest demands. After all, life is too short not to enjoy a bit of luxury.');
 INSERT INTO `wp_postmeta` VALUES (204,44,'_about_us_text','field_603beadf23f8f');
@@ -399,14 +402,14 @@ INSERT INTO `wp_postmeta` VALUES (220,50,'_wp_attached_file','2021/03/blog-artic
 INSERT INTO `wp_postmeta` VALUES (221,50,'_wp_attachment_metadata','a:5:{s:5:\"width\";i:728;s:6:\"height\";i:502;s:4:\"file\";s:29:\"2021/03/blog-article-img2.png\";s:5:\"sizes\";a:3:{s:6:\"medium\";a:4:{s:4:\"file\";s:29:\"blog-article-img2-300x207.png\";s:5:\"width\";i:300;s:6:\"height\";i:207;s:9:\"mime-type\";s:9:\"image/png\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:29:\"blog-article-img2-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}s:10:\"singlePost\";a:5:{s:4:\"file\";s:30:\"blog-article-img2-1920x700.png\";s:5:\"width\";i:1920;s:6:\"height\";i:700;s:9:\"mime-type\";s:9:\"image/png\";s:22:\"cpt_last_cropping_data\";a:6:{s:1:\"x\";i:0;s:1:\"y\";i:95;s:2:\"x2\";i:728;s:2:\"y2\";i:361;s:14:\"original_width\";i:728;s:15:\"original_height\";i:502;}}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
 INSERT INTO `wp_postmeta` VALUES (222,49,'_thumbnail_id','50');
 INSERT INTO `wp_postmeta` VALUES (225,52,'_edit_last','1');
-INSERT INTO `wp_postmeta` VALUES (226,52,'_edit_lock','1614699787:1');
+INSERT INTO `wp_postmeta` VALUES (226,52,'_edit_lock','1614959892:1');
 INSERT INTO `wp_postmeta` VALUES (227,53,'_wp_attached_file','2021/03/blog-article-img3.png');
 INSERT INTO `wp_postmeta` VALUES (228,53,'_wp_attachment_metadata','a:5:{s:5:\"width\";i:728;s:6:\"height\";i:502;s:4:\"file\";s:29:\"2021/03/blog-article-img3.png\";s:5:\"sizes\";a:3:{s:6:\"medium\";a:4:{s:4:\"file\";s:29:\"blog-article-img3-300x207.png\";s:5:\"width\";i:300;s:6:\"height\";i:207;s:9:\"mime-type\";s:9:\"image/png\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:29:\"blog-article-img3-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}s:10:\"singlePost\";a:5:{s:4:\"file\";s:30:\"blog-article-img3-1920x700.png\";s:5:\"width\";i:1920;s:6:\"height\";i:700;s:9:\"mime-type\";s:9:\"image/png\";s:22:\"cpt_last_cropping_data\";a:6:{s:1:\"x\";i:0;s:1:\"y\";i:55;s:2:\"x2\";i:728;s:2:\"y2\";i:321;s:14:\"original_width\";i:728;s:15:\"original_height\";i:502;}}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
 INSERT INTO `wp_postmeta` VALUES (229,52,'_thumbnail_id','53');
 INSERT INTO `wp_postmeta` VALUES (239,57,'_edit_last','1');
 INSERT INTO `wp_postmeta` VALUES (240,57,'_edit_lock','1614879974:1');
 INSERT INTO `wp_postmeta` VALUES (241,59,'_edit_last','1');
-INSERT INTO `wp_postmeta` VALUES (242,59,'_edit_lock','1614699377:1');
+INSERT INTO `wp_postmeta` VALUES (242,59,'_edit_lock','1614959858:1');
 INSERT INTO `wp_postmeta` VALUES (243,60,'_wp_attached_file','2021/03/20190705_204850.jpg');
 INSERT INTO `wp_postmeta` VALUES (244,60,'_wp_attachment_metadata','a:5:{s:5:\"width\";i:408;s:6:\"height\";i:306;s:4:\"file\";s:27:\"2021/03/20190705_204850.jpg\";s:5:\"sizes\";a:2:{s:6:\"medium\";a:4:{s:4:\"file\";s:27:\"20190705_204850-300x225.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:225;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:27:\"20190705_204850-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
 INSERT INTO `wp_postmeta` VALUES (245,59,'_thumbnail_id','60');
@@ -450,8 +453,6 @@ INSERT INTO `wp_postmeta` VALUES (285,70,'_edit_last','1');
 INSERT INTO `wp_postmeta` VALUES (286,70,'_edit_lock','1614860552:1');
 INSERT INTO `wp_postmeta` VALUES (287,71,'_edit_last','1');
 INSERT INTO `wp_postmeta` VALUES (288,71,'_edit_lock','1614860556:1');
-INSERT INTO `wp_postmeta` VALUES (289,72,'_edit_last','1');
-INSERT INTO `wp_postmeta` VALUES (290,72,'_edit_lock','1614860560:1');
 INSERT INTO `wp_postmeta` VALUES (293,74,'_menu_item_type','post_type_archive');
 INSERT INTO `wp_postmeta` VALUES (294,74,'_menu_item_menu_item_parent','0');
 INSERT INTO `wp_postmeta` VALUES (295,74,'_menu_item_object_id','-12');
@@ -490,23 +491,20 @@ INSERT INTO `wp_postmeta` VALUES (331,70,'_wp_desired_post_slug','asd');
 INSERT INTO `wp_postmeta` VALUES (332,71,'_wp_trash_meta_status','publish');
 INSERT INTO `wp_postmeta` VALUES (333,71,'_wp_trash_meta_time','1614861366');
 INSERT INTO `wp_postmeta` VALUES (334,71,'_wp_desired_post_slug','asd');
-INSERT INTO `wp_postmeta` VALUES (335,72,'_wp_trash_meta_status','publish');
-INSERT INTO `wp_postmeta` VALUES (336,72,'_wp_trash_meta_time','1614861368');
-INSERT INTO `wp_postmeta` VALUES (337,72,'_wp_desired_post_slug','asd');
 INSERT INTO `wp_postmeta` VALUES (343,79,'_wp_attached_file','2021/03/DJI_0020_Detailed.jpg');
 INSERT INTO `wp_postmeta` VALUES (344,79,'_wp_attachment_metadata','a:5:{s:5:\"width\";i:426;s:6:\"height\";i:240;s:4:\"file\";s:29:\"2021/03/DJI_0020_Detailed.jpg\";s:5:\"sizes\";a:2:{s:6:\"medium\";a:4:{s:4:\"file\";s:29:\"DJI_0020_Detailed-300x169.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:169;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:29:\"DJI_0020_Detailed-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
 INSERT INTO `wp_postmeta` VALUES (345,68,'_wp_trash_meta_status','publish');
 INSERT INTO `wp_postmeta` VALUES (346,68,'_wp_trash_meta_time','1614878750');
 INSERT INTO `wp_postmeta` VALUES (347,68,'_wp_desired_post_slug','asd');
 INSERT INTO `wp_postmeta` VALUES (348,83,'_edit_last','1');
-INSERT INTO `wp_postmeta` VALUES (349,83,'_edit_lock','1614882381:1');
+INSERT INTO `wp_postmeta` VALUES (349,83,'_edit_lock','1615238574:1');
 INSERT INTO `wp_postmeta` VALUES (353,83,'restaurant_location','DUBROVNIK, OLD TOWN');
 INSERT INTO `wp_postmeta` VALUES (354,83,'_restaurant_location','field_603e5bd600746');
 INSERT INTO `wp_postmeta` VALUES (355,83,'restaurant_google_maps_link','a:3:{s:5:\"title\";s:0:\"\";s:3:\"url\";s:30:\"https://g.page/icy-house?share\";s:6:\"target\";s:6:\"_blank\";}');
 INSERT INTO `wp_postmeta` VALUES (356,83,'_restaurant_google_maps_link','field_603e598b0266b');
 INSERT INTO `wp_postmeta` VALUES (357,83,'_thumbnail_id','88');
 INSERT INTO `wp_postmeta` VALUES (358,84,'_edit_last','1');
-INSERT INTO `wp_postmeta` VALUES (359,84,'_edit_lock','1614880057:1');
+INSERT INTO `wp_postmeta` VALUES (359,84,'_edit_lock','1614959704:1');
 INSERT INTO `wp_postmeta` VALUES (360,85,'_wp_attached_file','2021/03/unnamed.jpg');
 INSERT INTO `wp_postmeta` VALUES (361,85,'_wp_attachment_metadata','a:5:{s:5:\"width\";i:406;s:6:\"height\";i:270;s:4:\"file\";s:19:\"2021/03/unnamed.jpg\";s:5:\"sizes\";a:2:{s:6:\"medium\";a:4:{s:4:\"file\";s:19:\"unnamed-300x200.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:19:\"unnamed-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
 INSERT INTO `wp_postmeta` VALUES (362,84,'_thumbnail_id','85');
@@ -536,6 +534,28 @@ INSERT INTO `wp_postmeta` VALUES (385,92,'_wp_attachment_metadata','a:5:{s:5:\"w
 INSERT INTO `wp_postmeta` VALUES (386,91,'_thumbnail_id','92');
 INSERT INTO `wp_postmeta` VALUES (387,91,'hotel_googlemaps_link','a:3:{s:5:\"title\";s:0:\"\";s:3:\"url\";s:37:\"https://goo.gl/maps/R3nBYHEUNNQxFbFQ6\";s:6:\"target\";s:6:\"_blank\";}');
 INSERT INTO `wp_postmeta` VALUES (388,91,'_hotel_googlemaps_link','field_60411d8434214');
+INSERT INTO `wp_postmeta` VALUES (389,94,'about_us_text','We are an online business lifestyle magazine and business directory. We cover topics all-around living, doing business, and spending holidays in Croatia.\r\n\r\nAt HOW!CROATIA, we believe that people visiting Croatia deserve the best insider knowledge, support, and tips for a great vacation or business experience.\r\n\r\nTherefore In addition to our Magazine content, our Business Directory is offering a wide range of experts which will help you to get things done in Croatia.\r\n\r\nOur selection of Croatia\'s finest hotels and Luxury Rentals will satisfy even those with the highest demands. After all, life is too short not to enjoy a bit of luxury.\r\n\r\nasd');
+INSERT INTO `wp_postmeta` VALUES (390,94,'_about_us_text','field_603beadf23f8f');
+INSERT INTO `wp_postmeta` VALUES (391,95,'about_us_text','Therefore In addition to our Magazine content, our Business Directory is offering a wide range of experts which will help you to get things done in Croatia.\r\n\r\nOur selection of Croatia\'s finest hotels and Luxury Rentals will satisfy even those with the highest demands. After all, life is too short not to enjoy a bit of luxury.\r\n');
+INSERT INTO `wp_postmeta` VALUES (392,95,'_about_us_text','field_603beadf23f8f');
+INSERT INTO `wp_postmeta` VALUES (393,96,'_edit_last','1');
+INSERT INTO `wp_postmeta` VALUES (394,96,'_edit_lock','1614960046:1');
+INSERT INTO `wp_postmeta` VALUES (395,97,'_edit_last','1');
+INSERT INTO `wp_postmeta` VALUES (396,97,'_edit_lock','1614960077:1');
+INSERT INTO `wp_postmeta` VALUES (397,100,'_edit_last','1');
+INSERT INTO `wp_postmeta` VALUES (398,100,'_edit_lock','1614960095:1');
+INSERT INTO `wp_postmeta` VALUES (399,100,'restaurant_location','DUBROVNIK, OLD TOWN');
+INSERT INTO `wp_postmeta` VALUES (400,98,'_edit_last','1');
+INSERT INTO `wp_postmeta` VALUES (401,100,'_restaurant_location','field_603e5bd600746');
+INSERT INTO `wp_postmeta` VALUES (402,100,'restaurant_google_maps_link','a:3:{s:5:\"title\";s:0:\"\";s:3:\"url\";s:37:\"https://goo.gl/maps/Cy77J27mdGE8egbR7\";s:6:\"target\";s:6:\"_blank\";}');
+INSERT INTO `wp_postmeta` VALUES (403,100,'_restaurant_google_maps_link','field_603e598b0266b');
+INSERT INTO `wp_postmeta` VALUES (404,98,'restaurant_location','DUBROVNIK, OLD TOWN');
+INSERT INTO `wp_postmeta` VALUES (405,98,'_restaurant_location','field_603e5bd600746');
+INSERT INTO `wp_postmeta` VALUES (406,98,'restaurant_google_maps_link','a:3:{s:5:\"title\";s:0:\"\";s:3:\"url\";s:37:\"https://goo.gl/maps/Cy77J27mdGE8egbR7\";s:6:\"target\";s:0:\"\";}');
+INSERT INTO `wp_postmeta` VALUES (407,98,'_restaurant_google_maps_link','field_603e598b0266b');
+INSERT INTO `wp_postmeta` VALUES (408,98,'_edit_lock','1614960095:1');
+INSERT INTO `wp_postmeta` VALUES (409,101,'about_us_text','We are an online business lifestyle magazine and business directory. We cover topics all-around living, doing business, and spending holidays in Croatia.\r\n\r\nAt HOW!CROATIA, we believe that people visiting Croatia deserve the best insider knowledge, support, and tips for a great vacation or business experience.\r\n\r\nTherefore In addition to our Magazine content, our Business Directory is offering a wide range of experts which will help you to get things done in Croatia.\r\n\r\nOur selection of Croatia\'s finest hotels and Luxury Rentals will satisfy even those with the highest demands. After all, life is too short not to enjoy a bit of luxury.\r\n');
+INSERT INTO `wp_postmeta` VALUES (410,101,'_about_us_text','field_603beadf23f8f');
 /*!40000 ALTER TABLE `wp_postmeta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -575,7 +595,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -584,8 +604,7 @@ CREATE TABLE `wp_posts` (
 
 LOCK TABLES `wp_posts` WRITE;
 /*!40000 ALTER TABLE `wp_posts` DISABLE KEYS */;
-INSERT INTO `wp_posts` VALUES (4,1,'2021-02-26 12:04:56','0000-00-00 00:00:00','','Auto Draft','','auto-draft','open','open','','','','','2021-02-26 12:04:56','0000-00-00 00:00:00','',0,'http://howcroatia.local/?p=4',0,'post','',0);
-INSERT INTO `wp_posts` VALUES (7,1,'2021-02-26 16:57:34','2021-02-26 16:57:34','Find top locations to visit while at Croatia sea side','Home','','publish','closed','closed','','home','','','2021-03-03 13:50:02','2021-03-03 13:50:02','',0,'http://howcroatia.local/?page_id=7',0,'page','',0);
+INSERT INTO `wp_posts` VALUES (7,1,'2021-02-26 16:57:34','2021-02-26 16:57:34','Find top locations to visit while at Croatia sea side','Home','','publish','closed','closed','','home','','','2021-03-06 14:33:25','2021-03-06 14:33:25','',0,'http://howcroatia.local/?page_id=7',0,'page','',0);
 INSERT INTO `wp_posts` VALUES (8,1,'2021-02-26 16:57:34','2021-02-26 16:57:34','','Home','','inherit','closed','closed','','7-revision-v1','','','2021-02-26 16:57:34','2021-02-26 16:57:34','',7,'http://howcroatia.local/7-revision-v1/',0,'revision','',0);
 INSERT INTO `wp_posts` VALUES (9,1,'2021-02-26 16:58:00','2021-02-26 16:58:00','','Magazine','','publish','closed','closed','','magazine','','','2021-02-26 16:58:00','2021-02-26 16:58:00','',0,'http://howcroatia.local/?page_id=9',0,'page','',0);
 INSERT INTO `wp_posts` VALUES (10,1,'2021-02-26 16:58:00','2021-02-26 16:58:00','','Magazine','','inherit','closed','closed','','9-revision-v1','','','2021-02-26 16:58:00','2021-02-26 16:58:00','',9,'http://howcroatia.local/9-revision-v1/',0,'revision','',0);
@@ -593,9 +612,6 @@ INSERT INTO `wp_posts` VALUES (11,1,'2021-02-26 17:31:16','0000-00-00 00:00:00',
 INSERT INTO `wp_posts` VALUES (12,1,'2021-02-26 17:31:16','0000-00-00 00:00:00',' ','','','draft','closed','closed','','','','','2021-02-26 17:31:16','0000-00-00 00:00:00','',0,'http://howcroatia.local/?p=12',1,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (13,1,'2021-02-26 17:31:35','0000-00-00 00:00:00',' ','','','draft','closed','closed','','','','','2021-02-26 17:31:35','0000-00-00 00:00:00','',0,'http://howcroatia.local/?p=13',1,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (14,1,'2021-02-26 17:31:35','0000-00-00 00:00:00',' ','','','draft','closed','closed','','','','','2021-02-26 17:31:35','0000-00-00 00:00:00','',0,'http://howcroatia.local/?p=14',1,'nav_menu_item','',0);
-INSERT INTO `wp_posts` VALUES (17,1,'2021-02-26 19:52:53','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-02-26 19:52:53','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=medical_services&p=17',0,'medical_services','',0);
-INSERT INTO `wp_posts` VALUES (18,1,'2021-02-26 19:53:27','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-02-26 19:53:27','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=medical_services&p=18',0,'medical_services','',0);
-INSERT INTO `wp_posts` VALUES (19,1,'2021-02-26 19:54:14','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-02-26 19:54:14','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=medical_services&p=19',0,'medical_services','',0);
 INSERT INTO `wp_posts` VALUES (20,1,'2021-02-26 20:24:27','2021-02-26 20:24:27','','asd','','publish','closed','closed','','asd','','','2021-02-26 20:24:27','2021-02-26 20:24:27','',0,'http://howcroatia.local/?post_type=medical_services&#038;p=20',0,'medical_services','',0);
 INSERT INTO `wp_posts` VALUES (22,1,'2021-02-26 20:48:21','2021-02-26 20:48:21','','asd','','publish','closed','closed','','asd','','','2021-02-26 20:48:21','2021-02-26 20:48:21','',0,'http://howcroatia.local/?post_type=legal_services&#038;p=22',0,'legal_services','',0);
 INSERT INTO `wp_posts` VALUES (23,1,'2021-02-26 20:48:24','2021-02-26 20:48:24','','asd','','publish','closed','closed','','asd','','','2021-02-26 20:48:24','2021-02-26 20:48:24','',0,'http://howcroatia.local/?post_type=financial_services&#038;p=23',0,'financial_services','',0);
@@ -603,7 +619,6 @@ INSERT INTO `wp_posts` VALUES (24,1,'2021-02-26 20:48:27','2021-02-26 20:48:27',
 INSERT INTO `wp_posts` VALUES (29,1,'2021-02-26 20:51:19','2021-02-26 20:51:19',' ','','','publish','closed','closed','','29','','','2021-03-04 12:22:31','2021-03-04 12:22:31','',0,'http://howcroatia.local/?p=29',1,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (30,1,'2021-02-26 20:51:19','2021-02-26 20:51:19',' ','','','publish','closed','closed','','30','','','2021-03-04 12:22:31','2021-03-04 12:22:31','',0,'http://howcroatia.local/?p=30',2,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (35,1,'2021-02-26 21:29:15','2021-02-26 21:29:15','','asd','','publish','closed','closed','','asd','','','2021-02-26 21:29:15','2021-02-26 21:29:15','',0,'http://howcroatia.local/?post_type=hotels_rentals&#038;p=35',0,'hotels_rentals','',0);
-INSERT INTO `wp_posts` VALUES (38,1,'2021-02-28 18:33:36','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-02-28 18:33:36','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=acf-field-group&p=38',0,'acf-field-group','',0);
 INSERT INTO `wp_posts` VALUES (39,1,'2021-02-28 19:04:27','2021-02-28 19:04:27','','free-to-use-sounds--vuU18e2gs8-unsplash','','inherit','open','closed','','free-to-use-sounds-vuu18e2gs8-unsplash','','','2021-02-28 19:04:27','2021-02-28 19:04:27','',7,'http://howcroatia.local/wp-content/uploads/2021/02/free-to-use-sounds-vuU18e2gs8-unsplash.jpg',0,'attachment','image/jpeg',0);
 INSERT INTO `wp_posts` VALUES (40,1,'2021-02-28 19:04:37','2021-02-28 19:04:37','Find top locations to visit while at Croatia sea side','Home','','inherit','closed','closed','','7-revision-v1','','','2021-02-28 19:04:37','2021-02-28 19:04:37','',7,'http://howcroatia.local/7-revision-v1/',0,'revision','',0);
 INSERT INTO `wp_posts` VALUES (41,1,'2021-02-28 19:14:20','2021-02-28 19:14:20','a:7:{s:8:\"location\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"param\";s:4:\"page\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:1:\"7\";}}}s:8:\"position\";s:6:\"normal\";s:5:\"style\";s:7:\"default\";s:15:\"label_placement\";s:3:\"top\";s:21:\"instruction_placement\";s:5:\"label\";s:14:\"hide_on_screen\";s:0:\"\";s:11:\"description\";s:0:\"\";}','About Us Text','about-us-text','publish','closed','closed','','group_603beace6f6bd','','','2021-02-28 19:34:05','2021-02-28 19:34:05','',0,'http://howcroatia.local/?post_type=acf-field-group&#038;p=41',0,'acf-field-group','',0);
@@ -634,7 +649,6 @@ INSERT INTO `wp_posts` VALUES (68,1,'2021-03-04 12:21:01','2021-03-04 12:21:01',
 INSERT INTO `wp_posts` VALUES (69,1,'2021-03-04 12:22:31','2021-03-04 12:22:31','','Hotels & Luxury Rentals','','publish','closed','closed','','hotels-luxury-rentals-2','','','2021-03-04 12:22:31','2021-03-04 12:22:31','',0,'http://howcroatia.local/?p=69',3,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (70,1,'2021-03-04 12:24:55','2021-03-04 12:24:55','','asd','','trash','closed','closed','','asd__trashed','','','2021-03-04 12:36:02','2021-03-04 12:36:02','',0,'http://howcroatia.local/?post_type=medical&#038;p=70',0,'medical','',0);
 INSERT INTO `wp_posts` VALUES (71,1,'2021-03-04 12:24:59','2021-03-04 12:24:59','','asd','','trash','closed','closed','','asd__trashed','','','2021-03-04 12:36:06','2021-03-04 12:36:06','',0,'http://howcroatia.local/?post_type=legal&#038;p=71',0,'legal','',0);
-INSERT INTO `wp_posts` VALUES (72,1,'2021-03-04 12:25:03','2021-03-04 12:25:03','','asd','','trash','closed','closed','','asd__trashed','','','2021-03-04 12:36:08','2021-03-04 12:36:08','',0,'http://howcroatia.local/?post_type=financial&#038;p=72',0,'financial','',0);
 INSERT INTO `wp_posts` VALUES (74,1,'2021-03-04 12:25:48','2021-03-04 12:25:48','','Medical Services','','publish','closed','closed','','medical-services-2','','','2021-03-04 12:25:48','2021-03-04 12:25:48','',0,'http://howcroatia.local/?p=74',1,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (75,1,'2021-03-04 12:25:48','2021-03-04 12:25:48','','Legal Services','','publish','closed','closed','','legal-services-2','','','2021-03-04 12:25:48','2021-03-04 12:25:48','',0,'http://howcroatia.local/?p=75',2,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (76,1,'2021-03-04 12:25:48','2021-03-04 12:25:48','','Financial Services','','publish','closed','closed','','financial-services-2','','','2021-03-04 12:25:48','2021-03-04 12:25:48','',0,'http://howcroatia.local/?p=76',3,'nav_menu_item','',0);
@@ -653,6 +667,26 @@ INSERT INTO `wp_posts` VALUES (89,1,'2021-03-04 18:30:38','2021-03-04 18:30:38',
 INSERT INTO `wp_posts` VALUES (90,1,'2021-03-04 18:30:36','2021-03-04 18:30:36','','ciudad-maderas-MXbM1NrRqtI-unsplash','','inherit','open','closed','','ciudad-maderas-mxbm1nrrqti-unsplash','','','2021-03-04 18:30:36','2021-03-04 18:30:36','',89,'http://howcroatia.local/wp-content/uploads/2021/03/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg',0,'attachment','image/jpeg',0);
 INSERT INTO `wp_posts` VALUES (91,1,'2021-03-04 18:31:27','2021-03-04 18:31:27','<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s','Hotel Kukuriku','','publish','closed','closed','','hotel-kukuriku','','','2021-03-04 18:31:27','2021-03-04 18:31:27','',0,'http://howcroatia.local/?post_type=hotel&#038;p=91',0,'hotel','',0);
 INSERT INTO `wp_posts` VALUES (92,1,'2021-03-04 18:31:15','2021-03-04 18:31:15','','markus-spiske-g5ZIXjzRGds-unsplash','','inherit','open','closed','','markus-spiske-g5zixjzrgds-unsplash','','','2021-03-04 18:31:15','2021-03-04 18:31:15','',91,'http://howcroatia.local/wp-content/uploads/2021/03/markus-spiske-g5ZIXjzRGds-unsplash.jpg',0,'attachment','image/jpeg',0);
+INSERT INTO `wp_posts` VALUES (93,1,'2021-03-05 15:37:50','0000-00-00 00:00:00','','Auto Draft','','auto-draft','open','open','','','','','2021-03-05 15:37:50','0000-00-00 00:00:00','',0,'http://howcroatia.local/?p=93',0,'post','',0);
+INSERT INTO `wp_posts` VALUES (94,1,'2021-03-05 15:51:47','2021-03-05 15:51:47','Find top locations to visit while at Croatia sea side','Home','','inherit','closed','closed','','7-revision-v1','','','2021-03-05 15:51:47','2021-03-05 15:51:47','',7,'http://howcroatia.local/7-revision-v1/',0,'revision','',0);
+INSERT INTO `wp_posts` VALUES (95,1,'2021-03-05 15:52:02','2021-03-05 15:52:02','Find top locations to visit while at Croatia sea side','Home','','inherit','closed','closed','','7-revision-v1','','','2021-03-05 15:52:02','2021-03-05 15:52:02','',7,'http://howcroatia.local/7-revision-v1/',0,'revision','',0);
+INSERT INTO `wp_posts` VALUES (96,1,'2021-03-05 16:00:46','0000-00-00 00:00:00','','Restoran','','draft','closed','closed','','','','','2021-03-05 16:00:46','2021-03-05 16:00:46','',0,'http://howcroatia.local/?post_type=restaurants&#038;p=96',0,'restaurants','',0);
+INSERT INTO `wp_posts` VALUES (97,1,'2021-03-05 16:01:17','0000-00-00 00:00:00','','Restoran','','draft','closed','closed','','','','','2021-03-05 16:01:17','2021-03-05 16:01:17','',0,'http://howcroatia.local/?post_type=restaurants&#038;p=97',0,'restaurants','',0);
+INSERT INTO `wp_posts` VALUES (98,1,'2021-03-05 16:01:35','2021-03-05 16:01:35','','Restoran','','publish','closed','closed','','restoran-2','','','2021-03-05 16:01:35','2021-03-05 16:01:35','',0,'http://howcroatia.local/?post_type=restaurants&#038;p=98',0,'restaurants','',0);
+INSERT INTO `wp_posts` VALUES (99,1,'2021-03-05 16:01:22','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-05 16:01:22','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=restaurants&p=99',0,'restaurants','',0);
+INSERT INTO `wp_posts` VALUES (100,1,'2021-03-05 16:01:35','2021-03-05 16:01:35','','Restoran','','publish','closed','closed','','restoran','','','2021-03-05 16:01:35','2021-03-05 16:01:35','',0,'http://howcroatia.local/?post_type=restaurants&#038;p=100',0,'restaurants','',0);
+INSERT INTO `wp_posts` VALUES (101,1,'2021-03-06 14:33:25','2021-03-06 14:33:25','Find top locations to visit while at Croatia sea side','Home','','inherit','closed','closed','','7-revision-v1','','','2021-03-06 14:33:25','2021-03-06 14:33:25','',7,'http://howcroatia.local/7-revision-v1/',0,'revision','',0);
+INSERT INTO `wp_posts` VALUES (102,1,'2021-03-08 22:38:41','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:38:41','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=102',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (103,1,'2021-03-08 22:41:51','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:41:51','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=103',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (104,1,'2021-03-08 22:43:29','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:43:29','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=104',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (105,1,'2021-03-08 22:45:36','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:45:36','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=105',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (106,1,'2021-03-08 22:46:33','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:46:33','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=106',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (107,1,'2021-03-08 22:46:57','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:46:57','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=107',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (109,1,'2021-03-08 22:50:42','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:50:42','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=109',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (110,1,'2021-03-08 22:52:28','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:52:28','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=110',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (111,1,'2021-03-08 22:52:53','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:52:53','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=111',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (112,1,'2021-03-08 22:53:55','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:53:55','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=112',0,'financial','',0);
+INSERT INTO `wp_posts` VALUES (113,1,'2021-03-08 22:54:07','0000-00-00 00:00:00','','Auto Draft','','auto-draft','closed','closed','','','','','2021-03-08 22:54:07','0000-00-00 00:00:00','',0,'http://howcroatia.local/?post_type=financial&p=113',0,'financial','',0);
 /*!40000 ALTER TABLE `wp_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -712,7 +746,7 @@ CREATE TABLE `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -728,6 +762,12 @@ INSERT INTO `wp_term_taxonomy` VALUES (6,6,'category','',0,1);
 INSERT INTO `wp_term_taxonomy` VALUES (7,7,'category','',0,2);
 INSERT INTO `wp_term_taxonomy` VALUES (8,8,'location','',0,2);
 INSERT INTO `wp_term_taxonomy` VALUES (9,9,'location','',0,2);
+INSERT INTO `wp_term_taxonomy` VALUES (10,10,'service','',0,0);
+INSERT INTO `wp_term_taxonomy` VALUES (11,11,'service','',0,0);
+INSERT INTO `wp_term_taxonomy` VALUES (12,12,'location-financial','',0,0);
+INSERT INTO `wp_term_taxonomy` VALUES (13,13,'location-financial','',0,0);
+INSERT INTO `wp_term_taxonomy` VALUES (14,14,'location-financial','',0,0);
+INSERT INTO `wp_term_taxonomy` VALUES (15,15,'location-financial','',0,0);
 /*!40000 ALTER TABLE `wp_term_taxonomy` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -773,7 +813,7 @@ CREATE TABLE `wp_terms` (
   PRIMARY KEY (`term_id`),
   KEY `slug` (`slug`(191)),
   KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -789,6 +829,12 @@ INSERT INTO `wp_terms` VALUES (6,'Food &amp; Drinks','food-drinks',0);
 INSERT INTO `wp_terms` VALUES (7,'Lifestyle','lifestyle',0);
 INSERT INTO `wp_terms` VALUES (8,'Dubrovnik','dubrovnik',0);
 INSERT INTO `wp_terms` VALUES (9,'Rijeka','rijeka',0);
+INSERT INTO `wp_terms` VALUES (10,'Banking','banking',0);
+INSERT INTO `wp_terms` VALUES (11,'Professional Advisory','professional-advisory',0);
+INSERT INTO `wp_terms` VALUES (12,'Dubrovnik','dubrovnik',0);
+INSERT INTO `wp_terms` VALUES (13,'Rijeka','rijeka',0);
+INSERT INTO `wp_terms` VALUES (14,'Zagreb','zagreb',0);
+INSERT INTO `wp_terms` VALUES (15,'Split','split',0);
 /*!40000 ALTER TABLE `wp_terms` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -807,7 +853,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -831,18 +877,20 @@ INSERT INTO `wp_usermeta` VALUES (12,1,'wp_capabilities','a:1:{s:13:\"administra
 INSERT INTO `wp_usermeta` VALUES (13,1,'wp_user_level','10');
 INSERT INTO `wp_usermeta` VALUES (14,1,'dismissed_wp_pointers','');
 INSERT INTO `wp_usermeta` VALUES (15,1,'show_welcome_panel','0');
-INSERT INTO `wp_usermeta` VALUES (16,1,'session_tokens','a:3:{s:64:\"430f53845429a9b093782769cce3dbd7a7331f0c60e1a0bf5213928909d67f4b\";a:4:{s:10:\"expiration\";i:1614870310;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36\";s:5:\"login\";i:1614697510;}s:64:\"f731d6d444dcfa2a8011f4eb0553c996295d206416df3d4a47a69499afbfe016\";a:4:{s:10:\"expiration\";i:1614952146;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36\";s:5:\"login\";i:1614779346;}s:64:\"a875855143d6cd553fe9e4cdeeb414537424463b7e04f063c67571cacaecc753\";a:4:{s:10:\"expiration\";i:1615033237;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36\";s:5:\"login\";i:1614860437;}}');
+INSERT INTO `wp_usermeta` VALUES (16,1,'session_tokens','a:1:{s:64:\"afeaf27746d0fb6c363e945eaa2160a42f509eb668aca7f8ee0fc130d2f1b228\";a:4:{s:10:\"expiration\";i:1615409208;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36\";s:5:\"login\";i:1615236408;}}');
 INSERT INTO `wp_usermeta` VALUES (17,1,'wp_user-settings','libraryContent=browse&editor=tinymce');
 INSERT INTO `wp_usermeta` VALUES (18,1,'wp_user-settings-time','1614341091');
-INSERT INTO `wp_usermeta` VALUES (19,1,'wp_dashboard_quick_press_last_post_id','4');
+INSERT INTO `wp_usermeta` VALUES (19,1,'wp_dashboard_quick_press_last_post_id','93');
 INSERT INTO `wp_usermeta` VALUES (20,1,'community-events-location','a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}');
 INSERT INTO `wp_usermeta` VALUES (21,1,'managenav-menuscolumnshidden','a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}');
 INSERT INTO `wp_usermeta` VALUES (22,1,'metaboxhidden_nav-menus','a:1:{i:0;s:12:\"add-post_tag\";}');
-INSERT INTO `wp_usermeta` VALUES (23,1,'nav_menu_recently_edited','5');
+INSERT INTO `wp_usermeta` VALUES (23,1,'nav_menu_recently_edited','4');
 INSERT INTO `wp_usermeta` VALUES (24,1,'closedpostboxes_dashboard','a:0:{}');
 INSERT INTO `wp_usermeta` VALUES (25,1,'metaboxhidden_dashboard','a:5:{i:0;s:21:\"dashboard_site_health\";i:1;s:19:\"dashboard_right_now\";i:2;s:18:\"dashboard_activity\";i:3;s:21:\"dashboard_quick_press\";i:4;s:17:\"dashboard_primary\";}');
 INSERT INTO `wp_usermeta` VALUES (26,1,'closedpostboxes_acf-field-group','a:0:{}');
 INSERT INTO `wp_usermeta` VALUES (27,1,'metaboxhidden_acf-field-group','a:1:{i:0;s:7:\"slugdiv\";}');
+INSERT INTO `wp_usermeta` VALUES (28,1,'meta-box-order_hotel','a:4:{s:15:\"acf_after_title\";s:0:\"\";s:4:\"side\";s:34:\"submitdiv,locationdiv,postimagediv\";s:6:\"normal\";s:31:\"acf-group_60411d78f1eaa,slugdiv\";s:8:\"advanced\";s:0:\"\";}');
+INSERT INTO `wp_usermeta` VALUES (29,1,'screen_layout_hotel','2');
 /*!40000 ALTER TABLE `wp_usermeta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -890,4 +938,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-03-05  2:16:33
+-- Dump completed on 2021-03-09  1:07:43

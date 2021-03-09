@@ -2,7 +2,7 @@
 
   <footer class="footer">
     <div class="container__howcroatia">
-      <h2 class="section-heading section-heading--footer">We help you find adequate service for your stay in Croatia</h2>
+      <h2 class="section-heading section-heading--footer font-medium">We help you find adequate service for your stay in Croatia</h2>
       <div class="grid-layout grid-layout--service-blocks">
         <div class="grid-layout__item">
           <div class="service-block">
@@ -12,13 +12,7 @@
               </svg>
             </div>
             <div class="service-block__title">Medical Services</div>
-            <ul class="service-block__services">
-              <li class="service-block__services__item">Dermatologist</li>
-              <li class="service-block__services__item">Surgeon</li>
-              <li class="service-block__services__item">Cardiologist</li>
-              <li class="service-block__services__item">Oncologist</li>
-            </ul>
-            <a href="/" class="btn-circle btn-circle--service-block">
+            <a href="/medical" class="btn-circle btn-circle--service-block">
               <div class="btn-circle__background"></div>
             </a>
           </div>
@@ -41,7 +35,7 @@
               <li class="service-block__services__item">Legal and Clinics</li>
               <li class="service-block__services__item">Criminal Law</li>
             </ul>
-            <a href="/" class="btn-circle btn-circle--service-block">
+            <a href="/legal" class="btn-circle btn-circle--service-block">
               <div class="btn-circle__background"></div>
             </a>
           </div>
@@ -59,7 +53,7 @@
               <li class="service-block__services__item">Professional Advisory</li>
               <li class="service-block__services__item">Wealth Management</li>
             </ul>
-            <a href="/" class="btn-circle btn-circle--service-block">
+            <a href="/financial" class="btn-circle btn-circle--service-block">
               <div class="btn-circle__background"></div>
             </a>
           </div>
@@ -76,7 +70,7 @@
               <li class="service-block__services__item">Residental Real Estate</li>
               <li class="service-block__services__item">Commercial Real Estate</li>
             </ul>
-            <a href="/" class="btn-circle btn-circle--service-block">
+            <a href="/estate" class="btn-circle btn-circle--service-block">
               <div class="btn-circle__background"></div>
             </a>
           </div>

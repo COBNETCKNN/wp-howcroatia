@@ -69,25 +69,10 @@
                  wp_reset_postdata();
              ?>
 
-          <!-- SHARE BUTTONS -->
-          <div class="share-social">
-            <div class="share-social__title">Share on social</div>
-            <div class="share-social__medias">
-              <div class="social-links__link">
-                <svg width="7" height="12" viewBox="0 0 7 12" fill="inherit" xmlns="http://www.w3.org/2000/svg" >
-                  <?php get_template_part('partials/svg', 'facebook'); ?>
-                </svg>
-              </div>
-              <div class="social-links__link">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <?php get_template_part('partials/svg', 'linkedin'); ?>
-                </svg>
-              </div>
-              <div class="social-links__link">
-                <?php get_template_part('partials/svg', 'twitter'); ?>
-              </div>
-            </div>
-          </div>
+
+<!-- SHARE BUTTONS -->
+        <?php get_template_part('partials/social', 'share'); ?>
+
           <div class="line-separator line-separator--bottom line-separator--light"></div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap);
 /*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
@@ -11232,6 +11233,10 @@ video {
 
 .font-montserrat{
   font-family: Montserrat;
+}
+
+.font-sourceserif{
+  font-family: Source Serif Pro;
 }
 
 .font-thin{
@@ -31274,6 +31279,26 @@ header .header_nav_menu li a {
   margin-bottom: 3rem;
 }
 
+.featured_hotel__paragraph p {
+  font-size: 13px;
+}
+
+.blog-article {
+  margin: 0;
+}
+
+.rental-article {
+  margin: 0;
+}
+
+.service-article {
+  margin: 0;
+}
+
+.black-background-preview {
+  height: 618px;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -41953,6 +41978,10 @@ header .header_nav_menu li a {
 
   .sm\:font-montserrat{
     font-family: Montserrat;
+  }
+
+  .sm\:font-sourceserif{
+    font-family: Source Serif Pro;
   }
 
   .sm\:font-thin{
@@ -72507,6 +72536,10 @@ header .header_nav_menu li a {
     font-family: Montserrat;
   }
 
+  .md\:font-sourceserif{
+    font-family: Source Serif Pro;
+  }
+
   .md\:font-thin{
     font-weight: 100;
   }
@@ -103057,6 +103090,10 @@ header .header_nav_menu li a {
 
   .lg\:font-montserrat{
     font-family: Montserrat;
+  }
+
+  .lg\:font-sourceserif{
+    font-family: Source Serif Pro;
   }
 
   .lg\:font-thin{
@@ -133611,6 +133648,10 @@ header .header_nav_menu li a {
     font-family: Montserrat;
   }
 
+  .xl\:font-sourceserif{
+    font-family: Source Serif Pro;
+  }
+
   .xl\:font-thin{
     font-weight: 100;
   }
@@ -164163,6 +164204,10 @@ header .header_nav_menu li a {
     font-family: Montserrat;
   }
 
+  .\32xl\:font-sourceserif{
+    font-family: Source Serif Pro;
+  }
+
   .\32xl\:font-thin{
     font-weight: 100;
   }
@@ -185159,11 +185204,6 @@ textarea {
   justify-content: center;
   transition: fill, background-color 0.5s ease;
   fill: #393533;
-  margin-right: 24px;
-}
-
-.social-links__link:last-of-type {
-  margin-right: 0;
 }
 
 .social-links__link:hover {
@@ -185253,7 +185293,7 @@ textarea {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   display: block;
-  margin: 126px auto 0;
+  margin: 0px auto 0;
   outline: none;
   border: none;
   cursor: pointer;
@@ -185377,7 +185417,7 @@ textarea {
 
 .rental-articles,
 .service-articles {
-  padding: 238px 0 126px 0;
+  padding: 238px 0 0 0;
 }
 
 .filter-selectors__filter--light > .filter-selectors__filter__label {
