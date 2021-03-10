@@ -58,8 +58,15 @@
           $blogQuery = new WP_Query(array(
             'page_id' => 9,
             'posts_per_page' => 3,
-            'order' => 'DSC',
+            'order' => 'DESC',
             'orderby' => 'date',
+            'meta_query' => array(
+              array(
+                'key' => 'featured_article',
+                'value' => '"Yes"',
+                'compare' => 'LIKE',
+              )
+            )
           ));
 
           while($blogQuery->have_posts()){

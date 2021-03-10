@@ -823,3 +823,6 @@ Stack trace:
   thrown in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 73
 [09-Mar-2021 18:02:56 UTC] PHP Parse error:  syntax error, unexpected '$siteName' (T_VARIABLE) in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 77
 [09-Mar-2021 18:03:33 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\single.php on line 80
+[10-Mar-2021 14:04:07 UTC] WordPress database error Incorrect DATE value: '%"Yes"%' for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  INNER JOIN wp_postmeta ON ( wp_posts.ID = wp_postmeta.post_id ) WHERE 1=1  AND ( 
+  ( wp_postmeta.meta_key = 'featured_article' AND CAST(wp_postmeta.meta_value AS DATE) LIKE '%\"Yes\"%' )
+) AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish' OR wp_posts.post_status = 'acf-disabled' OR wp_posts.post_status = 'private') GROUP BY wp_posts.ID ORDER BY CAST(wp_postmeta.meta_value AS DATE) DESC LIMIT 0, 3 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/wp-howcroatia/front-page.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
