@@ -102,16 +102,21 @@
                 'orderby' => 'date',
                 'order' => 'ASC',
                 'posts_per_page' => 2,
+                'meta_query' => array(
+                  array(
+                    'key' => 'show_in_featured_hotel',
+                    'value' => '"Yes"',
+                    'compare' => 'LIKE',
+              )
+            )
               );
 
               $featuredRentalsQuery = new WP_Query($args);
 
               while($featuredRentalsQuery->have_posts()){
                 $featuredRentalsQuery->the_post();
-             
-        
+                     
         ?>
-
 
             <article class="rental-article mt-32 pb-20 md:pb-0">
               <figure class="visual-container">
@@ -133,7 +138,6 @@
                 <div class="btn-circle__background"></div>
               </a>
             </article>
-
 
     <?php  }
       wp_reset_postdata();

@@ -1,4 +1,4 @@
-<article class="blog-article mx-auto pb-20">
+<article id="post-<?php the_ID(); ?>" class="blog-article blog-article--black pb-24">
   <figure class="visual-container">
     <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="Sea">
   </figure>

@@ -31299,6 +31299,20 @@ header .header_nav_menu li a {
   height: 618px;
 }
 
+.category__select {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background: #181818;
+  text-transform: uppercase;
+  padding: 8px;
+  border-bottom: 1px solid #3D3B3A;
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
