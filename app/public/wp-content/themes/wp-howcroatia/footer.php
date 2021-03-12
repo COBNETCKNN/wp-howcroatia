@@ -11,10 +11,16 @@
                 <?php get_template_part('partials/svg', 'medical'); ?>
               </svg>
             </div>
-            <div class="service-block__title">Medical Services</div>
-            <a href="/medical" class="btn-circle btn-circle--service-block">
-              <div class="btn-circle__background"></div>
-            </a>
+          <div class="service-block__title">Medical Services</div>
+          <ul class="service-block__services">
+            <li class="service-block__services__item">Dermatologist</li>
+            <li class="service-block__services__item">Surgeon</li>
+            <li class="service-block__services__item">Cardiologist</li>
+            <li class="service-block__services__item">Oncologist</li>
+          </ul>
+          <a href="/" class="btn-circle btn-circle--service-block">
+            <div class="btn-circle__background"></div>
+          </a>
           </div>
         </div>
         <div class="grid-layout__item">

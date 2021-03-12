@@ -19,7 +19,7 @@
     <section class="featured-blog-articles">
       <div class="container__howcroatia">
         <h2 class="section-heading pb-20 font-medium">Featured articles</h2>
-        <div class="block md:grid grid-cols-3 gap-0 ">
+        <div class="block md:grid grid-cols-3 gap-0 mb-24">
 
       <?php 
 
@@ -38,11 +38,18 @@
         ));
 
         while($blogQuery->have_posts()){
-          $blogQuery->the_post(); 
+          $blogQuery->the_post();  ?>
           
-            get_template_part('partials/magazine', 'article');
-
-          ?>
+          <article class="blog-article">
+            <figure class="visual-container">
+              <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="Sea">
+            </figure>
+            <div class="blog-article__title"><?php the_category(); ?></div>
+            <a href="<?php the_permalink(); ?>" class="blog-article__heading"><?php the_title(); ?></a>
+            <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
+              <div class="btn-circle__background"></div>
+            </a>
+          </article>
 
           <?php
             }
@@ -63,7 +70,7 @@
       <?php
         if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) : 
     
-          echo '<select class="category__select" name="categoryfilter"><option value="">Select category...</option>
+          echo '<select class="category__select" name="categoryfilter"><option value="">All Categories</option>
           ';
           foreach ( $terms as $term ) :
             echo '
@@ -89,10 +96,20 @@
           $allPostsQuery = new WP_Query($args);
 
           while($allPostsQuery->have_posts()){
-            $allPostsQuery->the_post();
+            $allPostsQuery->the_post(); ?>
 
-            get_template_part('partials/magazine', 'article');  
-              
+            <article class="blog-article blog-article--black pb-24">
+              <figure class="visual-container">
+                <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="Sea">
+              </figure>
+              <div class="blog-article__title"><?php the_category(); ?></div>
+              <a href="<?php the_permalink(); ?>" class="blog-article__heading"><?php the_title(); ?></a>
+              <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
+                <div class="btn-circle__background"></div>
+              </a>
+          </article>  
+
+          <?php
            } 
           wp_reset_postdata();
 

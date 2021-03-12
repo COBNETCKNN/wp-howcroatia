@@ -19,43 +19,40 @@ function ajax_filter_function(){
  
 	$query = new WP_Query( $args ); ?>
 
-    <div class="container mx-auto">
-        <div class="block md:grid grid-cols-2 gap-4 mx-auto">
+    <div class="block md:grid grid-cols-2 gap-4 mx-auto">
 
     <?php
  
 	if( $query->have_posts() ) :
-		while( $query->have_posts() ): $query->the_post(); ?>
+		while( $query->have_posts() ): $query->the_post(); 
 
-                <article class="rental-article rental-article--black mx-auto mt-20">
-                <figure class="visual-container">
-                    <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="featured villa">
-                </figure>
-                <a href="" class="rental-article__heading"><?php the_title(); ?></a>
-                <div class="rental-article__title"><span>Location: </span><?php
-                
-                // outputing result of selected category
-                $taxonomyLocations = get_the_terms( $post->ID, 'location' );
-                    foreach ( $taxonomyLocations as $taxonomyLocation ) {
-                    echo $taxonomyLocation->name; // or whatever value
-                    } ?>
+            get_template_part('partials/hotel', 'article');
 
-                </div>
-                <p class="rental-article__description"><?php the_content(); ?></p>
-                <a href="<?php echo $hotelGooglemapsLink; ?>" class="btn-circle btn-circle--blog-article">
-                    <div class="btn-circle__background"></div>
-                </a>
-                </article>
-
-        <?php
 		endwhile;
 		wp_reset_postdata();
-	else :
-		
+	else : 
+
+        $args = array(
+            'post_type' => 'hotel',
+            'orderby' => 'date',
+            'order' => 'ASC',
+            'posts_per_page' => -1,
+        );
+
+        $hotelQuery = new WP_Query($args);
+
+        while($hotelQuery->have_posts()) {
+            $hotelQuery->the_post(); 
+            
+        // acf field for GoogleMaps link
+        $hotelGooglemapsLink = get_field('hotel_googlemaps_link');
+            
+            get_template_part('partials/hotel', 'article');
+
+    }
 	endif; ?>
 
     </div>
-</div>
 
     <?php
  

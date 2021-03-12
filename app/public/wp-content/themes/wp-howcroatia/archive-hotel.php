@@ -10,12 +10,15 @@
 <!-- AJAX FILTER FOR HOTELS AND LUXURY RENTALS -->
 <div class="container mx-auto text-center p-6 pb-28">
   <div class="flex justify-center m-auto">
-  <p class="text-lg font-normal mr-3">Location: </p>
-  <form class="my-auto text-lg font-semibold" action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
+ 
+
+  <form class="" action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
+  <div class="filter-selectors__filter filter-selectors__filter--light">
+  <div class="filter-selectors__filter__label">Location:</div>
     <?php
       if( $terms = get_terms( array( 'taxonomy' => 'location', 'orderby' => 'name' ) ) ) : 
   
-        echo '<select class="ajax__selector" name="categoryfilter"><option value="">Select Location...</option>';
+        echo '<select class="hotel__select" name="categoryfilter"><option value="">All Locations</option>';
         foreach ( $terms as $term ) :
           echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
         endforeach;
@@ -23,12 +26,15 @@
       endif;
     ?>
     <input type="hidden" name="action" value="myfilter">
+    </div>
   </form>
+
  </div>
 </div>
 
+<!-- HOTELS AND LUXURY RENTALS CONTENT -->
 <div class="container__howcroatia" id="response">
-    <div class="block md:grid grid-cols-2 gap-4">
+    <div class="block md:grid grid-cols-2 gap-">
 <?php
     $args = array(
         'post_type' => 'hotel',
@@ -45,39 +51,14 @@
     // acf field for GoogleMaps link
     $hotelGooglemapsLink = get_field('hotel_googlemaps_link');
         
-    ?>
+      get_template_part('partials/hotel', 'article');
 
-    <article class="rental-article rental-article--black mx-auto pb-24">
-      <figure class="visual-container">
-        <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="featured villa">
-      </figure>
-      <a href="" class="rental-article__heading"><?php the_title(); ?></a>
-      <div class="rental-article__title"><span>Location: </span><?php
-      
-      // outputing result of selected category
-      $taxonomyLocations = get_the_terms( $post->ID, 'location' );
-        foreach ( $taxonomyLocations as $taxonomyLocation ) {
-        echo $taxonomyLocation->name; // or whatever value
-        } ?>
-
-      </div>
-      <p class="rental-article__description"><?php the_content(); ?></p>
-      <a href="<?php echo $hotelGooglemapsLink; ?>" class="btn-circle btn-circle--blog-article">
-        <div class="btn-circle__background"></div>
-      </a>
-    </article>
-<?php
     }
 ?>
+       </div>
     </div>
-</div>
-
-
-        </div>
-      <div class="line-separator line-separator--bottom line-separator--light"></div>
-
-
-<!-- HOTELS AND LUXURY RENTALS CONTENT -->
+  </div>
+  <div class="line-separator line-separator--bottom line-separator--light"></div>
 
   </section>
   <div class="pb-24 pt-14">

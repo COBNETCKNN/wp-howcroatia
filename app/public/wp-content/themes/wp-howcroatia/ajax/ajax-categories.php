@@ -22,10 +22,20 @@ function misha_filter_function(){
  
  <?php
 	if( $query->have_posts() ) :
-		while( $query->have_posts() ): $query->the_post();
+		while( $query->have_posts() ): $query->the_post(); ?>
 			
-            get_template_part('partials/magazine', 'article');
+            <article class="blog-article blog-article--black pb-24">
+              <figure class="visual-container">
+                <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="Sea">
+              </figure>
+              <div class="blog-article__title"><?php the_category(); ?></div>
+              <a href="<?php the_permalink(); ?>" class="blog-article__heading"><?php the_title(); ?></a>
+              <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
+                <div class="btn-circle__background"></div>
+              </a>
+          </article> 
 
+    <?php
 		endwhile;
 		wp_reset_postdata();
 
@@ -41,10 +51,20 @@ function misha_filter_function(){
         $allPostsQuery = new WP_Query($args);
 
         while($allPostsQuery->have_posts()){
-        $allPostsQuery->the_post();
+        $allPostsQuery->the_post(); ?>
 
-	    	get_template_part('partials/magazine', 'article');
+        <article class="blog-article blog-article--black pb-24">
+            <figure class="visual-container">
+            <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="Sea">
+            </figure>
+            <div class="blog-article__title"><?php the_category(); ?></div>
+            <a href="<?php the_permalink(); ?>" class="blog-article__heading"><?php the_title(); ?></a>
+            <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
+            <div class="btn-circle__background"></div>
+            </a>
+        </article> 
 
+    <?php
         }
 	endif; ?>
 
