@@ -43,6 +43,7 @@ add_theme_support('post-thumbnails');
 add_image_size('heroSection', 1920, 700, false);
 add_image_size('singlePost', 1920, 700, true);
 add_image_size('postsThumbnail', 540, 350, true);
+add_image_size('hotelService', 40, 40, true);
 
 /* REGISTRATION OF NAV MENU */
 function custom_menus() {
@@ -54,6 +55,9 @@ function custom_menus() {
     );
 }
 add_action( 'init', 'custom_menus' );
+
+/* REMOVE WRAPPING P TAG FOR the_content() FUNCTION */
+remove_filter( 'the_content', 'wpautop' );
 
 
 
@@ -69,6 +73,11 @@ require_once('ajax/custom-taxonomies.php');
 /* AJAX LOCATION CALL FOR HOTELS AND LUXURY RENTALS */
 require_once('ajax/ajax-hotel.php');
 
+/* AJAX LOCATION FILTER FOR FINANCIAL LOCATION */
+require_once('ajax/ajax-financial-location.php');
+
+/* AJAX LOCATION FILTER FOR FINANCIAL SERVICES */
+require_once('ajax/ajax-financial-service.php');
 
 
 

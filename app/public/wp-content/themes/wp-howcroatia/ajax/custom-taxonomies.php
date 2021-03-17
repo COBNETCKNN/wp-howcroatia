@@ -12,6 +12,18 @@ function hotelsRentalsLocationTaxonomy() {
 }
 add_action( 'init', 'hotelsRentalsLocationTaxonomy', 0 );
 
+//Custom Category Taxonomy for Hotels and Luxury Post type 
+function hotelCategoryTaxonomy() {
+    $args = array(
+        'label'        => __( 'Category', 'textdomain' ),
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+    
+    register_taxonomy( 'hotel-category', 'hotel', $args );
+}
+add_action( 'init', 'hotelCategoryTaxonomy', 0 );
+
 //Custom Service Taxonomy for Financial Custom Post Type
 function serviceFinancial() {
     $args = array(

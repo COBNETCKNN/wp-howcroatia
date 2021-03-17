@@ -2,7 +2,7 @@
     <figure class="visual-container">
         <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="featured villa">
     </figure>
-    <a href="" class="rental-article__heading"><?php the_title(); ?></a>
+    <a href="<?php echo $hotelGooglemapsLink; ?>" class="rental-article__heading"><?php the_title(); ?></a>
     <div class="rental-article__title"><span>Location: </span><?php
     
     // outputing result of selected category

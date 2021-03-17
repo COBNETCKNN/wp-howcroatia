@@ -51,35 +51,42 @@
     <section class="featured-blog-articles">
       <div class="container__howcroatia md:mx-auto">
         <h2 class="section-heading pb-20 font-medium">Featured articles</h2>
-        <div class="block md:grid grid-cols-3 gap-0">
+        <div class="block md:grid grid-cols-3 gap-14 mb-24">
 
         <?php 
 
-          $blogQuery = new WP_Query(array(
-            'page_id' => 9,
-            'posts_per_page' => 3,
-            'order' => 'DESC',
-            'orderby' => 'date',
-            'meta_query' => array(
-              array(
-                'key' => 'featured_article',
-                'value' => '"Yes"',
-                'compare' => 'LIKE',
-              )
+        $blogQuery = new WP_Query(array(
+          'page_id' => 9,
+          'posts_per_page' => 3,
+          'order' => 'DESC',
+          'orderby' => 'date',
+          'meta_query' => array(
+            array(
+              'key' => 'featured_article',
+              'value' => '"Yes"',
+              'compare' => 'LIKE',
             )
-          ));
+          )
+        ));
 
-          while($blogQuery->have_posts()){
-            $blogQuery->the_post(); 
-            
-            get_template_part('partials/magazine', 'article');
+        while($blogQuery->have_posts()){
+          $blogQuery->the_post();  ?>
+          
+          <article class="blog-article">
+            <figure class="visual-container">
+              <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="Sea">
+            </figure>
+            <div class="blog-article__title"><?php the_category(); ?></div>
+            <a href="<?php the_permalink(); ?>" class="blog-article__heading"><?php the_title(); ?></a>
+            <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
+              <div class="btn-circle__background"></div>
+            </a>
+          </article>
 
-            ?>
-
-            <?php
-              }
-                wp_reset_postdata();
-            ?>
+          <?php
+            }
+              wp_reset_postdata();
+          ?>
             
            </div>
          </div>
@@ -92,8 +99,8 @@
       </figure>
       <div class="container__howcroatia">
         <h2 class="section-heading section-heading--rentals font-medium">Find beautiful & luxurious places to stay</h2>
-          <div class="grid-layout__item mt-36">
-            <div class="block md:grid grid-cols-2 gap-4">
+        <div class="grid-layout__item mt-36">
+            <div class="block md:grid grid-cols-2 gap-14">
 
         <?php 
         

@@ -34,5 +34,37 @@ jQuery(function($){
 			return false;
 		});
 
+	//location filter for financial services
+	$('#financial_location').change(function(){
+		var filter = $('#financial_location');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#financial_response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
+	//services filter for financial services
+	$('#financial_service').change(function(){
+		var filter = $('#financial_service');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#financial_response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
 
 });

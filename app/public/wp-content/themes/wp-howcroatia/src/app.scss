@@ -10,6 +10,10 @@
 @import "tailwindcss/utilities";
 
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 header .header_nav_menu {
     display: flex;
@@ -107,15 +111,15 @@ header .header_nav_menu li a {
 }
 
 .blog-article {
-    margin: 0;
+    margin: 0 auto;
 }
 
 .rental-article {
-    margin: 0;
+    margin: 0 auto;
 }
 
 .service-article {
-    margin: 0;
+    margin: 0 auto;
 }
 
 .black-background-preview {
@@ -147,4 +151,46 @@ header .header_nav_menu li a {
   margin-left: 8px;
   position: relative;
   cursor: pointer;
+}
+
+.filter-selectors__filter
+.filter-selectors__filter--light {
+    margin: 0px !important;
+}
+
+.social-links__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #F2F0F0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill, background-color 0.5s ease;
+  fill: #393533;
+  margin-right: 24px;
+}
+
+.social-links__link:last-of-type {
+  margin-right: 0;
+}
+
+.social-links__link:hover {
+  background-color: #E9E0DE;
+}
+
+.gallery__thumbnail{
+  width: 756px;
+  height: 504px;
+}
+
+.gallery__gallery {
+  width: 756px;
+  height: 484px;
+}
+
+@media (max-width: 767px) {                  
+   .gallery__gallery {
+      display: none;
+   }
 }

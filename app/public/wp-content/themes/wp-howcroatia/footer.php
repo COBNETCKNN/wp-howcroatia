@@ -55,9 +55,16 @@
             </div>
             <div class="service-block__title">Financial Services</div>
             <ul class="service-block__services">
-              <li class="service-block__services__item">Banking</li>
-              <li class="service-block__services__item">Professional Advisory</li>
-              <li class="service-block__services__item">Wealth Management</li>
+
+          
+          <?php
+            // outputing custom taxonomies for custom post type
+            $terms = get_terms('service', $args );
+              foreach( $terms as $term ){
+              echo '<li class="service-block__services__item">' . $term->name . '&nbsp;</li>';
+              } 
+          ?>
+              
             </ul>
             <a href="/financial" class="btn-circle btn-circle--service-block">
               <div class="btn-circle__background"></div>
