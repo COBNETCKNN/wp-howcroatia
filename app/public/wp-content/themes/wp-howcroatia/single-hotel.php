@@ -192,6 +192,20 @@
               </div>
           </div>
 				</section>
+
+        <!-- BOOK IT BUTTON -->
+
+        <?php 
+          // acf field for link to book the hotel or luxury rental
+          $bookItLink = get_field('book_it_link');
+        ?>
+
+        <a href="<?php echo $bookItLink?>" target=”_blank”>
+          <div class="fixed-btn font-poppins">
+            <h4 class="font-poppins">BOOK IT</h4>
+          </div>
+        </a>
+
 </main>
 
 

@@ -63,7 +63,7 @@
 
       </div>
       <p class="rental-article__description"><?php the_content(); ?></p>
-      <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article" target="_blank">
+      <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
           <div class="btn-circle__background"></div>
       </a>
   </article>

@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap);
 /*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
@@ -11237,6 +11238,10 @@ video {
 
 .font-sourceserif{
   font-family: Source Serif Pro;
+}
+
+.font-poppins{
+  font-family: Poppins;
 }
 
 .font-thin{
@@ -31425,6 +31430,45 @@ header .header_nav_menu li a {
   margin: auto;
 }
 
+.explore-all {
+  margin-left: 125px;
+}
+
+.filter-selectors__filter__label {
+  margin-left: 90px;
+}
+
+.category__select {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  color: #FAF6F5;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.fixed-btn {
+  position: fixed;
+  width: 98px;
+  height: 48px;
+  bottom: 10%;
+  right: 10%;
+  background: #E1653E;
+  border-radius: 40px;
+}
+
+.fixed-btn h4 {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 16px;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -42108,6 +42152,10 @@ header .header_nav_menu li a {
 
   .sm\:font-sourceserif{
     font-family: Source Serif Pro;
+  }
+
+  .sm\:font-poppins{
+    font-family: Poppins;
   }
 
   .sm\:font-thin{
@@ -72666,6 +72714,10 @@ header .header_nav_menu li a {
     font-family: Source Serif Pro;
   }
 
+  .md\:font-poppins{
+    font-family: Poppins;
+  }
+
   .md\:font-thin{
     font-weight: 100;
   }
@@ -103220,6 +103272,10 @@ header .header_nav_menu li a {
 
   .lg\:font-sourceserif{
     font-family: Source Serif Pro;
+  }
+
+  .lg\:font-poppins{
+    font-family: Poppins;
   }
 
   .lg\:font-thin{
@@ -133778,6 +133834,10 @@ header .header_nav_menu li a {
     font-family: Source Serif Pro;
   }
 
+  .xl\:font-poppins{
+    font-family: Poppins;
+  }
+
   .xl\:font-thin{
     font-weight: 100;
   }
@@ -164332,6 +164392,10 @@ header .header_nav_menu li a {
 
   .\32xl\:font-sourceserif{
     font-family: Source Serif Pro;
+  }
+
+  .\32xl\:font-poppins{
+    font-family: Poppins;
   }
 
   .\32xl\:font-thin{

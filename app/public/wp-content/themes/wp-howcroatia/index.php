@@ -74,7 +74,7 @@
           ';
           foreach ( $terms as $term ) :
             echo '
-            <option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
+            <option class="bg-white text-black" value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
           endforeach;
           echo '</select>';
         endif;

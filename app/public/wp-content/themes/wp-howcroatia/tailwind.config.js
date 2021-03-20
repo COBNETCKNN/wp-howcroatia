@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
    purge: [
     './css/main.css',
@@ -9,6 +11,7 @@ module.exports = {
       fontFamily: {
         montserrat: ['Montserrat'],
         sourceserif: ['Source Serif Pro'],
+        poppins: ['Poppins'],
       }
     },
   },
