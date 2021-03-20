@@ -99,6 +99,21 @@
             'supports' => array('title', 'thumbnail'),
         ));
 
+        // Restaurants Custom Post Type
+        register_post_type('advertisement', array(
+            'public' => true,
+            'labels' => array(
+                'name' => 'Advertisements',
+                'add_new' => 'Add Advertisement',
+                'add_new_item' => 'Add New Advertisement',
+                'edit_item' => 'Edit Advertisement',
+                'all_items' => 'All Advertisements',
+                'singular_name' => 'Advertisement'
+            ),
+            'menu_icon' => 'dashicons-money-alt',
+            'supports' => array('title', 'thumbnail'),
+        ));
+
 
 
     }

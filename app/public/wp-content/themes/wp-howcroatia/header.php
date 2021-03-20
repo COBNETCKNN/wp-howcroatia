@@ -14,8 +14,8 @@
 
   if(get_post_type() == 'hotel'){
     get_template_part('partials/header', 'white');
-  } else{
-    get_template_part('partials/header', 'black');
-  }
+    } else{
+      get_template_part('partials/header', 'black');
+    }
 
 ?>

@@ -22,15 +22,38 @@
           <div class="paragraph paragraph--preview">
             <?php the_content(); ?>
           </div>
+
+  <!-- ADVERTISEMENT SECTION -->
+          <?php 
           
-          <!-- RECOMMENDED RESTAURANTS -->
-          <div class="ad-block ad-block--preview">
-            <figure class="visual-container visual-container--ad">
-              <img src="./img/sample-ad.png" alt="sample ad">
-              <figcaption>Place for advertisment</figcaption>
-            </figure>
+            $args = array(
+              'posts_per_page' => 1,
+              'post_type' => 'advertisement',
+              'orderby' => 'rand',
+              'order' => 'DESC',
+            );
+
+            $advertisementQuery = new WP_Query($args);
+
+            while($advertisementQuery->have_posts()){
+              $advertisementQuery->the_post();
+
+              //acf link field
+              $advertisementLink = get_field('advertisement_link');
+            
+          ?>
+          
+          <div class="container__howcroatia advertisement__image">
+           <a href="<?php echo $advertisementLink; ?>" target="_blank">
+              <img src="<?php the_post_thumbnail_url(); ?>" alt="sample ad">
+           </a>
           </div>
-         
+
+          <?php }
+            wp_reset_postdata();
+          ?>
+          
+<!-- RECOMMENDED RESTAURANTS -->
         <?php 
         
         $restaurantsQuery = new WP_Query(array(
@@ -68,7 +91,6 @@
              <?php } 
                  wp_reset_postdata();
              ?>
-
 
 <!-- SHARE BUTTONS -->
         <?php get_template_part('partials/social', 'share'); ?>

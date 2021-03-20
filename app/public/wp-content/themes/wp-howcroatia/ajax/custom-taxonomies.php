@@ -48,4 +48,40 @@ function locationFinancial() {
 }
 add_action( 'init', 'locationFinancial', 0 );
 
+//Custom Service Taxonomy for Real Estate Custom Post Type
+function serviceRealEstate() {
+    $args = array(
+        'label'        => __( 'Service', 'textdomain' ),
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+    
+    register_taxonomy( 'service-real-estate', 'estate', $args );
+}
+add_action( 'init', 'serviceRealEstate', 0 );
+
+//Custom Service Taxonomy for Medical Services Custom Post Type
+function serviceMedical() {
+    $args = array(
+        'label'        => __( 'Service', 'textdomain' ),
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+    
+    register_taxonomy( 'service-medical', 'medical', $args );
+}
+add_action( 'init', 'serviceMedical', 0 );
+
+//Custom Service Taxonomy for Legal Services Custom Post Type
+function serviceLegal() {
+    $args = array(
+        'label'        => __( 'Service', 'textdomain' ),
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+    
+    register_taxonomy( 'service-legal', 'legal', $args );
+}
+add_action( 'init', 'serviceLegal', 0 );
+
 ?>

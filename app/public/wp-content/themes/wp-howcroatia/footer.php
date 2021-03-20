@@ -13,10 +13,15 @@
             </div>
           <div class="service-block__title">Medical Services</div>
           <ul class="service-block__services">
-            <li class="service-block__services__item">Dermatologist</li>
-            <li class="service-block__services__item">Surgeon</li>
-            <li class="service-block__services__item">Cardiologist</li>
-            <li class="service-block__services__item">Oncologist</li>
+
+          <?php
+            // outputing custom taxonomies for custom post type
+            $terms = get_terms('service-medical', $args );
+              foreach( $terms as $term ){
+              echo '<li class="service-block__services__item">' . $term->name . '&nbsp;</li>';
+              } 
+          ?>
+
           </ul>
           <a href="/" class="btn-circle btn-circle--service-block">
             <div class="btn-circle__background"></div>
@@ -37,9 +42,15 @@
             </div>
             <div class="service-block__title">Legal Services</div>
             <ul class="service-block__services">
-              <li class="service-block__services__item">Public Defenders</li>
-              <li class="service-block__services__item">Legal and Clinics</li>
-              <li class="service-block__services__item">Criminal Law</li>
+
+             <?php
+            // outputing custom taxonomies for custom post type
+            $terms = get_terms('service-legal', $args );
+              foreach( $terms as $term ){
+              echo '<li class="service-block__services__item">' . $term->name . '&nbsp;</li>';
+              } 
+            ?>
+
             </ul>
             <a href="/legal" class="btn-circle btn-circle--service-block">
               <div class="btn-circle__background"></div>
@@ -80,8 +91,15 @@
             </div>
             <div class="service-block__title">Real Estate Services</div>
             <ul class="service-block__services">
-              <li class="service-block__services__item">Residental Real Estate</li>
-              <li class="service-block__services__item">Commercial Real Estate</li>
+              
+            <?php
+            // outputing custom taxonomies for custom post type
+            $terms = get_terms('service-real-estate', $args );
+              foreach( $terms as $term ){
+              echo '<li class="service-block__services__item">' . $term->name . '&nbsp;</li>';
+              } 
+            ?>
+
             </ul>
             <a href="/estate" class="btn-circle btn-circle--service-block">
               <div class="btn-circle__background"></div>

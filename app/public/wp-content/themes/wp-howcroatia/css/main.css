@@ -31415,6 +31415,16 @@ header .header_nav_menu li a {
   text-transform: uppercase;
 }
 
+.ask_advice__text {
+  margin-top: 1.1rem;
+}
+
+.advertisement__image img {
+  width: 816px;
+  height: 318px;
+  margin: auto;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

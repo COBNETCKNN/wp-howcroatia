@@ -102,6 +102,36 @@
           </div>
         </section>
 
+<!-- ADVERTISEMENT SECTION -->
+        <?php 
+        
+          $args = array(
+            'posts_per_page' => 1,
+            'post_type' => 'advertisement',
+            'orderby' => 'rand',
+            'order' => 'DESC',
+          );
+
+          $advertisementQuery = new WP_Query($args);
+
+          while($advertisementQuery->have_posts()){
+            $advertisementQuery->the_post();
+
+            //acf link field
+            $advertisementLink = get_field('advertisement_link');
+          
+        ?>
+        
+        <div class="container__howcroatia advertisement__image mt-28">
+          <a href="<?php echo $advertisementLink; ?>" target="_blank">
+            <img src="<?php the_post_thumbnail_url(); ?>" alt="sample ad">
+          </a>
+        </div>
+
+        <?php }
+          wp_reset_postdata();
+        ?>
+
 
 <!-- SECTION INFO BOX -->
 				<section id="info-box">
@@ -115,7 +145,7 @@
 						$email 				 = get_field('hotel_email');
 				
 				?>
-					<div class="info-box mb-44">
+					<div class="info-box">
 						<h3 class="info-box__name mb-4"><?php the_title(); ?></h3>
               <span class="info-box__address"><?php echo $address; ?></span>
               <span class="info-box__city"><?php echo $location; ?></span>

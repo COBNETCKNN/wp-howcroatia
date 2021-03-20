@@ -12,7 +12,7 @@
         ));
       ?>
       <div class="business_listings header__navigation__link--expanding js-expanding-link">Business Listings</div>
-      <a href="mailto:sample@gmail.com" class="ask__advice header__navigation__cta block"><p class="text-center mt-4">Ask for advice</p></a>
+      <a href="mailto:sample@gmail.com" class="ask__advice header__navigation__cta block"><p class="ask_advice__text text-center">Ask for advice</p></a>
   </nav>
 </header>
 <div class="header-drop-down js-drop-down">

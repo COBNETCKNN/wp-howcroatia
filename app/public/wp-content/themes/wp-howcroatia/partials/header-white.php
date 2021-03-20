@@ -16,7 +16,7 @@
       ?>
     </a>
     <div class="header__navigation__link header__navigation__link--expanding js-expanding-link">Business Listings</div>
-    <a href="mailto:sample@gmail.com" class="header__navigation__cta ask__advice"><p class="text-center mt-4">Ask for advice</p></a>
+    <a href="mailto:sample@gmail.com" class="header__navigation__cta ask__advice"><p class="text-center ask_advice__text">Ask for advice</p></a>
     <div class="header__navigation__h-menu js-h-menu__trigger">
       <div class="header__navigation__h-menu__bar"></div>
       <div class="header__navigation__h-menu__bar"></div>
