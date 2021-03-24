@@ -1,6 +1,4 @@
-jQuery(document).ready(function (jQuery) {
-
-    let header = document.querySelector('.js-header');
+let header = document.querySelector('.js-header');
 let mainFeaturedArticleSection = document.querySelector('.js-main-featured-article');
 let expandingNav = document.querySelector('.js-drop-down');
 let expandingNavLink = document.querySelector('.js-expanding-link');
@@ -159,6 +157,3 @@ filters.forEach(item => {
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
-
-
-});

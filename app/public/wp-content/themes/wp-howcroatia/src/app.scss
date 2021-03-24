@@ -224,12 +224,27 @@ header .header_nav_menu li a {
 }
 
 .ask__advice {
-width: 148px;
-height: 48px;
-left: 1228px;
-top: 32px;
+  width: 148px;
+  height: 48px;
+  left: 1228px;
+  top: 32px;
+  background: #FFFFFF;
+}
 
-background: #FFFFFF;
+.ask_advice__text {
+  margin-top: 18px;
+}
+
+.ask__advice__black {
+  width: 148px;
+  height: 48px;
+  left: 1228px;
+  top: 32px;
+  background: #2A2A2A;
+}
+
+.ask__advice__black p {
+  margin-top: 18px;
 }
 
 .header__navigation__link {
@@ -240,9 +255,7 @@ background: #FFFFFF;
   text-transform: uppercase;
 }
 
-.ask_advice__text {
-  margin-top: 1.1rem;
-}
+
 
 .advertisement__image img{
   width: 816px;
@@ -290,4 +303,16 @@ background: #FFFFFF;
   text-align: center;
   margin-top: 16px;
 
+}
+
+.advertisement__picture {
+  margin-bottom: 187px;
+}
+
+.service-block__services__item::after {
+  content:', ';
+}
+
+.service-block__services__item:last-of-type::after {
+  content:'';
 }

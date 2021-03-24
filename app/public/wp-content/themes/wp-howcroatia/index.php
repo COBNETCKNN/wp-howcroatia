@@ -60,6 +60,37 @@
          </div>
       </section>
 
+<!-- ADVERTISEMENT SECTION -->
+            
+        <?php 
+        
+          $args = array(
+            'posts_per_page' => 1,
+            'post_type' => 'advertisement',
+            'orderby' => 'rand',
+            'order' => 'DESC',
+          );
+
+          $advertisementQuery = new WP_Query($args);
+
+          while($advertisementQuery->have_posts()){
+            $advertisementQuery->the_post();
+
+            //acf link field
+            $advertisementLink = get_field('advertisement_link');
+          
+        ?>
+
+        <div class="advertisement__picture container__howcroatia advertisement__image mt-28">
+          <a href="<?php echo $advertisementLink; ?>" target="_blank">
+            <img src="<?php the_post_thumbnail_url(); ?>" alt="sample ad">
+          </a>
+        </div>
+
+        <?php }
+          wp_reset_postdata();
+        ?>
+
 <!-- ALL MAGAZINE ARTICLES -->      
   <section class="recent-blog-articles">
     <div class="container__howcroatia">

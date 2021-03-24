@@ -12,7 +12,8 @@
     
 <?php 
 
-  if(get_post_type() == 'hotel'){
+// conditional statement to show white header only on certain post types
+  if(get_post_type() == 'hotel' || get_post_type() == 'medical' || get_post_type() == 'legal' || get_post_type() == 'financial' || get_post_type() == 'estate'){
     get_template_part('partials/header', 'white');
     } else{
       get_template_part('partials/header', 'black');

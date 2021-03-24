@@ -31412,16 +31412,28 @@ header .header_nav_menu li a {
   background: #FFFFFF;
 }
 
+.ask_advice__text {
+  margin-top: 18px;
+}
+
+.ask__advice__black {
+  width: 148px;
+  height: 48px;
+  left: 1228px;
+  top: 32px;
+  background: #2A2A2A;
+}
+
+.ask__advice__black p {
+  margin-top: 18px;
+}
+
 .header__navigation__link {
   margin-top: 0px !important;
 }
 
 .header_nav_menu_white li {
   text-transform: uppercase;
-}
-
-.ask_advice__text {
-  margin-top: 1.1rem;
 }
 
 .advertisement__image img {
@@ -31467,6 +31479,18 @@ header .header_nav_menu li a {
   color: #FFFFFF;
   text-align: center;
   margin-top: 16px;
+}
+
+.advertisement__picture {
+  margin-bottom: 187px;
+}
+
+.service-block__services__item::after {
+  content: ", ";
+}
+
+.service-block__services__item:last-of-type::after {
+  content: "";
 }
 
 @media (min-width: 640px){
@@ -185352,7 +185376,7 @@ textarea {
   font-weight: 700;
   color: #7E7A79;
   display: inline-block;
-  line-height: 0.8;
+  line-height: 1.4;
 }
 
 .btn-circle--service-block {

@@ -1,15 +1,26 @@
 <?php get_header(); ?>
 
+
 <?php 
 
-    $heroQuery = new WP_Query(array(
-        'page_id' => 7
-    ));
+//query to load selected featured post on front page
+      $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => 1,
+        'meta_query' => array(
+          array(
+            'key' => 'front_page_post',
+            'value' => '"Yes',
+            'compare' => 'LIKE',
+          )
+        )
+      );
 
-    while($heroQuery->have_posts()){
-        $heroQuery->the_post();
-    
+      $heroPostQuery = new WP_Query($args);
 
+      while($heroPostQuery->have_posts()){
+        $heroPostQuery->the_post();
+     
 ?>
 
 <!-- HERO SECTION -->
@@ -19,15 +30,32 @@
         <figure class="visual-container visual-container--screen">
           <img src="<?php the_post_thumbnail_url();?>" alt="Sea">
         </figure>
-        <a href="/">
+        <a href="<?php the_permalink(); ?>">
           <div class="blog-article__title">Travel</div>
-          <a href="/" class="blog-article__heading"><?php the_content(); ?></a>
-          <a href="/magazine" class="btn-circle btn-circle--blog-article">
+          <a href="<?php the_permalink(); ?>" class="blog-article__heading"><?php the_title(); ?></a>
+          <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
             <div class="btn-circle__background"></div>
           </a>
           </a>
       </article>
     </section>
+
+    <?php  }
+      wp_reset_postdata();
+    ?>
+
+<?php 
+
+//query which loads paragraphs from page named Home
+    $heroQuery = new WP_Query(array(
+        'page_id' => 7
+    ));
+
+    while($heroQuery->have_posts()){
+        $heroQuery->the_post();
+    
+
+?>
 
 <!-- ABOUT US PARAGRAPHS -->
     <section class="about-us-section">

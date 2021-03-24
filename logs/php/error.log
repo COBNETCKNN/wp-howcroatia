@@ -4301,3 +4301,13 @@ Stack trace:
 [20-Mar-2021 16:31:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\custom-taxonomies.php on line 72
 [20-Mar-2021 16:31:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\custom-taxonomies.php on line 72
 [20-Mar-2021 16:31:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\custom-taxonomies.php on line 72
+[24-Mar-2021 14:54:19 UTC] PHP Parse error:  syntax error, unexpected ',' in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\header.php on line 15
+[24-Mar-2021 15:01:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directoriy_uri() in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php:11
+Stack trace:
+#0 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php(287): howcroatia_files('')
+#1 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\script-loader.php(2004): do_action('wp_enqueue_scri...')
+#4 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php(287): wp_enqueue_scripts('')
+#5 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(A in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 11
