@@ -18,7 +18,7 @@
             // outputing custom taxonomies for custom post type
             $terms = get_terms('service-medical', $args );
               foreach( $terms as $term ){
-              echo '<li class="service-block__services__item">' . $term->name . '</li>';
+              echo '<li class="service-block__services__item">&nbsp;' . $term->name . '</li>';
               } 
           ?>
 
@@ -47,7 +47,7 @@
             // outputing custom taxonomies for custom post type
             $terms = get_terms('service-legal', $args );
               foreach( $terms as $term ){
-              echo '<li class="service-block__services__item">' . $term->name . '</li>';
+              echo '<li class="service-block__services__item">&nbsp;' . $term->name . '</li>';
               } 
             ?>
 
@@ -72,7 +72,7 @@
             // outputing custom taxonomies for custom post type
             $terms = get_terms('service', $args );
               foreach( $terms as $term ){
-              echo '<li class="service-block__services__item">' . $term->name . '</li>';
+              echo '<li class="service-block__services__item">&nbsp;' . $term->name . '</li>';
               } 
           ?>
               
@@ -96,7 +96,7 @@
             // outputing custom taxonomies for custom post type
             $terms = get_terms('service-real-estate', $args );
               foreach( $terms as $term ){
-              echo '<li class="service-block__services__item">' . $term->name . '</li>';
+              echo '<li class="service-block__services__item">&nbsp;' . $term->name . '</li>';
               } 
             ?>
 

@@ -62,8 +62,6 @@
 
         while($financialQuery->have_posts()){
           $financialQuery->the_post();
-        
-        $serviceLink = get_field('link_to_service');
 
       ?>
 
@@ -71,7 +69,7 @@
             <figure class="visual-container">
               <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="featured villa">
             </figure>
-            <a href="<?php echo $serviceLink ?>" class="service-article__heading"><?php the_title(); ?></a>
+            <a href="<?php the_permalink(); ?>" class="service-article__heading"><?php the_title(); ?></a>
             <div class="service-article__title">
               <?php
       
@@ -83,7 +81,7 @@
 
             </div>
             <p class="service-article__description"><?php echo wp_trim_words( get_the_content(), 18, '...' ); ?></p>
-            <a href="<?php echo $serviceLink ?>" class="btn-circle btn-circle--blog-article">
+            <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
               <div class="btn-circle__background"></div>
             </a>
           </article>
@@ -92,15 +90,6 @@
           </div>
    </div>
 </div>
-
-
-      </div>
-
-
-
-      
-
-
       
       <button class="view-more-btn">View more stories</button>
     </div>
