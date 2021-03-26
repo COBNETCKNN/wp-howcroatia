@@ -1,17 +1,15 @@
 <?php get_header(); ?>
 
-
-
 <main class="main">
   <section class="scroll-nav-trigger js-scroll-nav-trigger"></section>
   <section class="mb-20">
     <div class="container__howcroatia container--preview">
-          <article class="blog-article blog-article--main-featured blog-article--preview blog-article--light">
+          <article class="service_article blog-article blog-article--main-featured blog-article--preview blog-article--light">
             <div class="blog-article__title">
             
                 <?php
                     // displaying selected custom taxonomy
-                    $terms = get_the_terms( $post->ID , 'hotel-category' );
+                    $terms = get_the_terms( $post->ID , 'service-medical' );
                     foreach ( $terms as $term ) {
                     echo $term->name;
                     }
@@ -23,7 +21,7 @@
             
                 <?php
                 // displaying selected custom taxonomy
-                $terms = get_the_terms( $post->ID , 'location' );
+                $terms = get_the_terms( $post->ID , 'location-medical' );
                 foreach ( $terms as $term ) {
                 echo $term->name;
                 }
@@ -42,7 +40,7 @@
 
                 <div class="block lg:w-1/2 mx-auto">
                 <?php 
-                  $images = get_field('hotels_gallery');
+                  $images = get_field('services_gallery');
                   $size = 'medium'; // (thumbnail, medium, large, full or custom size)
                   if( $images ): ?>
                     <div class="gallery__gallery grid grid-cols-2 gap-4 mt-4 lg:mt-0 mx-auto lg:float-left">
@@ -62,45 +60,7 @@
           <p class="paragraph paragraph--preview">
             <?php the_content(); ?>
           </p>
-        </section>
-
-<!-- SERVICES SECTION -->
-		<section id="services">
-      
-			<?php
-			// acf repeater field for services
-			if( have_rows('services_repeater') ): ?>
-				<h2 class="section-heading section-heading--services">Services</h2>
-					<div class="preview-services">
-						<div class="grid grid-cols-3 gap-16 mx-auto">
-  
-					  <?php
-
-								// Loop through rows.
-								while( have_rows('services_repeater') ) : the_row();
-
-										// acf fields from repeater field
-										$service_name = get_sub_field('service_name');
-										$service_icon = get_sub_field('service_icon'); ?>
-
-										<div>
-											<img class="mx-auto" src="<?php echo esc_url($service_icon['sizes']['hotelService']); ?>" alt="">
-											<div class="preview-services__item__title"><?php echo $service_name; ?></div>
-										</div>
-
-								<?php
-								// End loop.
-								endwhile;
-
-						// No value.
-						else :
-								// Do something...
-						endif; 
-						?>
-
-						</div>
-          </div>
-        </section>
+    </section>
 
 <!-- ADVERTISEMENT SECTION -->
         <?php 
@@ -134,19 +94,19 @@
 
 
 <!-- SECTION INFO BOX -->
-				<section id="info-box">
+        <section id="info-box">
 
 				<?php 
 				
-						$address 			 = get_field('hotel_address');
-						$location      = get_field('hotel_location');
-						$phone_number  = get_field('hotel_phone_number');
-					  $fax 					 = get_field('hotel_fax');
-						$email 				 = get_field('hotel_email');
+            $address 			 = get_field('service_address');
+            $location            = get_field('service_location');
+            $phone_number        = get_field('service_phone_number');
+            $fax 			     = get_field('service_fax');
+            $email 				 = get_field('service_contact_email');
 				
 				?>
-					<div class="info-box">
-						<h3 class="info-box__name mb-4"><?php the_title(); ?></h3>
+        <div class="info-box">
+            <h3 class="info-box__name mb-4"><?php the_title(); ?></h3>
               <span class="info-box__address"><?php echo $address; ?></span>
               <span class="info-box__city"><?php echo $location; ?></span>
               <div class="info-box__contact">
@@ -180,9 +140,9 @@
                   <div class="info-icon">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                      
-											<?php 
-												get_template_part('partials/svg', 'email');
-											?>
+                    <?php 
+                        get_template_part('partials/svg', 'email');
+                    ?>
 
                     </svg>
                   </div>
@@ -197,7 +157,7 @@
 
         <?php 
           // acf field for link to book the hotel or luxury rental
-          $bookItLink = get_field('book_it_link');
+          $bookItLink = get_field('service_book_it_link');
         ?>
 
         <a href="<?php echo $bookItLink?>" target=”_blank”>

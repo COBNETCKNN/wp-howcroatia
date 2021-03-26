@@ -72,6 +72,18 @@ function serviceMedical() {
 }
 add_action( 'init', 'serviceMedical', 0 );
 
+//Custom Location Taxonomy for Medical Services Custom Post Type
+function locationMedical() {
+    $args = array(
+        'label'        => __( 'Location', 'textdomain' ),
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+    
+    register_taxonomy( 'location-medical', 'medical', $args );
+}
+add_action( 'init', 'locationMedical', 0 );
+
 //Custom Service Taxonomy for Legal Services Custom Post Type
 function serviceLegal() {
     $args = array(
@@ -83,5 +95,7 @@ function serviceLegal() {
     register_taxonomy( 'service-legal', 'legal', $args );
 }
 add_action( 'init', 'serviceLegal', 0 );
+
+
 
 ?>

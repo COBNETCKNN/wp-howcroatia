@@ -75,11 +75,17 @@ require_once('ajax/custom-taxonomies.php');
 /* AJAX LOCATION CALL FOR HOTELS AND LUXURY RENTALS */
 require_once('ajax/ajax-hotel.php');
 
+/* AJAX SERVICE FILTER FOR FINANCIAL SERVICES */
+require_once('ajax/ajax-financial-service.php');
+
 /* AJAX LOCATION FILTER FOR FINANCIAL LOCATION */
 require_once('ajax/ajax-financial-location.php');
 
-/* AJAX LOCATION FILTER FOR FINANCIAL SERVICES */
-require_once('ajax/ajax-financial-service.php');
+/* AJAX SERVICE FILTER FOR MEDICAL SERVICES */
+require_once('ajax/ajax-medical-service.php');
+
+/* AJAX LOCATION FILTER FOR MEDICAL SERVICES */
+require_once('ajax/ajax-medical-location.php');
 
 
 

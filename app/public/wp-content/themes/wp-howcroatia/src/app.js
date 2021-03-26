@@ -66,5 +66,37 @@ jQuery(function($){
 		return false;
 	});
 
+	//services filter for medical services
+	$('#medical_service').change(function(){
+		var filter = $('#medical_service');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#medical_response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
+	//location filter for medical services
+	$('#medical_location').change(function(){
+		var filter = $('#medical_location');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#medical_response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
 
 });

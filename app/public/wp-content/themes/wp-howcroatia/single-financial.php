@@ -34,7 +34,7 @@
         <!-- GALLERY SECTION -->
         <section id="gallery" class="realtive">
           <div class="block md:block mx-4 lg:mx-auto lg:flex justify-center">
-                <div class="block lg:w-1/2 mx-auto">
+                <div class="galllery_thumbnail block lg:w-1/2 mx-auto">
                   <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="gallery__thumbnail mx-auto lg:float-right lg:mr-4">
                 </div>
 
@@ -94,7 +94,7 @@
 
 
 <!-- SECTION INFO BOX -->
-				<section id="info-box">
+        <section id="info-box">
 
 				<?php 
 				
@@ -105,8 +105,8 @@
             $email 				 = get_field('service_contact_email');
 				
 				?>
-					<div class="info-box">
-						<h3 class="info-box__name mb-4"><?php the_title(); ?></h3>
+        <div class="info-box">
+            <h3 class="info-box__name mb-4"><?php the_title(); ?></h3>
               <span class="info-box__address"><?php echo $address; ?></span>
               <span class="info-box__city"><?php echo $location; ?></span>
               <div class="info-box__contact">
@@ -157,7 +157,7 @@
 
         <?php 
           // acf field for link to book the hotel or luxury rental
-          $bookItLink = get_field('book_it_link');
+          $bookItLink = get_field('service_book_it_link');
         ?>
 
         <a href="<?php echo $bookItLink?>" target=”_blank”>
