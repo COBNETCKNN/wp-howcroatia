@@ -98,5 +98,69 @@ jQuery(function($){
 		return false;
 	});
 
+	//services filter for legal services
+	$('#legal_service').change(function(){
+		var filter = $('#legal_service');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#legal_response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
+	//location filter for medical services
+	$('#legal_location').change(function(){
+		var filter = $('#legal_location');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#legal_response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
+	//services filter for Real Estate services
+	$('#real_estate_service').change(function(){
+		var filter = $('#real_estate_service');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#real_estate_response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
+		//location filter for medical services
+	$('#real_estate_location').change(function(){
+		var filter = $('#real_estate_location');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#real_estate_response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
 
 });

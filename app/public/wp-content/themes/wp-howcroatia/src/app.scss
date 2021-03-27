@@ -182,18 +182,18 @@ header .header_nav_menu li a {
   background-color: #E9E0DE;
 }
 
-.gallery__thumbnail{
-  width: 756px;
-  height: 504px;
-}
-
-.gallery__gallery {
+.gallery__thumbnail {
   width: 756px;
   height: 484px;
 }
 
+.gallery__gallery img{
+  width: 350px;
+  height: 234px;
+}
+
 .galllery_thumbnail img{
-  height: 509px;
+  height: 540px;
 }
 
 @media (max-width: 767px) {                  

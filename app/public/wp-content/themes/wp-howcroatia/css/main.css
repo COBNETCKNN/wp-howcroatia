@@ -31365,16 +31365,16 @@ header .header_nav_menu li a {
 
 .gallery__thumbnail {
   width: 756px;
-  height: 504px;
-}
-
-.gallery__gallery {
-  width: 756px;
   height: 484px;
 }
 
+.gallery__gallery img {
+  width: 350px;
+  height: 234px;
+}
+
 .galllery_thumbnail img {
-  height: 509px;
+  height: 540px;
 }
 
 @media (max-width: 767px) {
@@ -185266,7 +185266,7 @@ textarea {
   text-decoration: none;
   display: block;
   margin-top: 2rem;
-  height: 2.75rem;
+  height: 3.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

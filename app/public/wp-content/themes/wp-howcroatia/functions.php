@@ -46,6 +46,7 @@ add_image_size('heroSection', 1920, 700, false);
 add_image_size('singlePost', 1920, 700, true);
 add_image_size('postsThumbnail', 540, 350, true);
 add_image_size('hotelService', 40, 40, true);
+add_image_size('galleryThumbnail', 750, 540, true);
 
 /* REGISTRATION OF NAV MENU */
 function custom_menus() {
@@ -86,6 +87,18 @@ require_once('ajax/ajax-medical-service.php');
 
 /* AJAX LOCATION FILTER FOR MEDICAL SERVICES */
 require_once('ajax/ajax-medical-location.php');
+
+/* AJAX SERVICE FILTER FOR LEGAL SERVICES */
+require_once('ajax/ajax-legal-service.php');
+
+/* AJAX LOCATION FILTER FOR LEGAL SERVICES */
+require_once('ajax/ajax-legal-location.php');
+
+/* AJAX SERVICE FILTER FOR REAL ESTATE SERVICES */
+require_once('ajax/ajax-real-estate-service.php');
+
+/* AJAX LOCATION FILTER FOR REAL ESTATE SERVICES */
+require_once('ajax/ajax-real-estate-location.php');
 
 
 

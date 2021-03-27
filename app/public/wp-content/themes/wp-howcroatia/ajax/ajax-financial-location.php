@@ -37,7 +37,7 @@ function financial_location(){
             // outputing result of selected category
             $taxonomyLocations = get_the_terms( $post->ID, 'location-financial' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
-                echo $taxonomyLocation->name; // or whatever value
+                echo $taxonomyLocation->name . '&nbsp;'; // or whatever value
                 } ?>
 
             </div>
@@ -81,7 +81,7 @@ function financial_location(){
             // outputing result of selected category
             $taxonomyLocations = get_the_terms( $post->ID, 'location-financial' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
-                echo $taxonomyLocation->name; // or whatever value
+                echo $taxonomyLocation->name . '&nbsp;'; // or whatever value
                 } ?>
 
             </div>

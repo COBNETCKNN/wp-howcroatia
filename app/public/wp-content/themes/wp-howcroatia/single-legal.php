@@ -9,7 +9,7 @@
             
                 <?php
                     // displaying selected custom taxonomy
-                    $terms = get_the_terms( $post->ID , 'service' );
+                    $terms = get_the_terms( $post->ID , 'service-legal' );
                     foreach ( $terms as $term ) {
                     echo $term->name;
                     }
@@ -21,7 +21,7 @@
             
                 <?php
                 // displaying selected custom taxonomy
-                $terms = get_the_terms( $post->ID , 'location-financial' );
+                $terms = get_the_terms( $post->ID , 'location-legal' );
                 foreach ( $terms as $term ) {
                 echo $term->name;
                 }
@@ -35,7 +35,7 @@
         <section id="gallery" class="realtive">
           <div class="block md:block mx-4 lg:mx-auto lg:flex justify-center">
                 <div class="block lg:w-1/2 mx-auto">
-                  <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="gallery__thumbnail mx-auto lg:float-right lg:mr-4">
+                  <img src="<?php the_post_thumbnail_url('galleryThumbnail'); ?>" alt="" class="gallery__thumbnail mx-auto lg:float-right lg:mr-4">
                 </div>
 
                 <div class="block lg:w-1/2 mx-auto">
@@ -43,10 +43,10 @@
                   $images = get_field('services_gallery');
                   $size = 'medium'; // (thumbnail, medium, large, full or custom size)
                   if( $images ): ?>
-                    <div class="gallery__gallery grid grid-cols-2 gap-4 mt-4 lg:mt-0 mx-auto lg:float-left">
+                    <div class="gallery__gallery grid grid-cols-2 gap-4 lg:mt-0 mx-auto lg:float-left">
                       <?php foreach( $images as $image ): ?>
                             
-                                  <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="mx-auto w-full h-full" />
+                        <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="" />
 
                       <?php endforeach; ?>
                       </div>
@@ -60,7 +60,7 @@
           <p class="paragraph paragraph--preview">
             <?php the_content(); ?>
           </p>
-      </section>
+        </section>
 
 <!-- ADVERTISEMENT SECTION -->
         <?php 
@@ -115,8 +115,8 @@
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                       <?php 									
-												get_template_part('partials/svg', 'phone');
-											?>
+                        get_template_part('partials/svg', 'phone');
+                    ?>
 
                     </svg>
                   </div>
@@ -127,9 +127,9 @@
                   <div class="info-icon">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       
-											<?php 
-												get_template_part('partials/svg','fax');
-											?>
+                    <?php 
+                        get_template_part('partials/svg','fax');
+                    ?>
 
                     </svg>
                   </div>
@@ -153,7 +153,7 @@
           </div>
 				</section>
 
-<!-- BOOK IT BUTTON -->
+        <!-- BOOK IT BUTTON -->
 
         <?php 
           // acf field for link to book the hotel or luxury rental

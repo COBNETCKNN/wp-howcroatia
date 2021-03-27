@@ -31,11 +31,11 @@
           </article>
         </section>
 
-        <!-- GALLERY SECTION -->
+<!-- GALLERY SECTION -->
         <section id="gallery" class="realtive">
           <div class="block md:block mx-4 lg:mx-auto lg:flex justify-center">
-                <div class="galllery_thumbnail block lg:w-1/2 mx-auto">
-                  <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="gallery__thumbnail mx-auto lg:float-right lg:mr-4">
+                <div class="block lg:w-1/2 mx-auto">
+                  <img src="<?php the_post_thumbnail_url('galleryThumbnail'); ?>" alt="" class="gallery__thumbnail mx-auto lg:float-right lg:mr-4">
                 </div>
 
                 <div class="block lg:w-1/2 mx-auto">
@@ -43,10 +43,10 @@
                   $images = get_field('services_gallery');
                   $size = 'medium'; // (thumbnail, medium, large, full or custom size)
                   if( $images ): ?>
-                    <div class="gallery__gallery grid grid-cols-2 gap-4 mt-4 lg:mt-0 mx-auto lg:float-left">
+                    <div class="gallery__gallery grid grid-cols-2 gap-4 lg:mt-0 mx-auto lg:float-left">
                       <?php foreach( $images as $image ): ?>
                             
-                                  <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="mx-auto w-full h-full" />
+                        <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="" />
 
                       <?php endforeach; ?>
                       </div>
@@ -55,7 +55,7 @@
           </div>
         </section>
 
-        <!-- CONTENT SECTION -->
+<!-- CONTENT SECTION -->
         <section class="mt-28" id="content">
           <p class="paragraph paragraph--preview">
             <?php the_content(); ?>

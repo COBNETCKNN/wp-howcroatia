@@ -36,7 +36,7 @@
         <!-- GALLERY SECTION -->
         <section id="gallery" class="realtive">
           <div class="block md:block mx-4 lg:mx-auto lg:flex justify-center">
-                <div class="galllery_thumbnail block lg:w-1/2 mx-auto">
+                <div class="block lg:w-1/2 mx-auto">
                   <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="gallery__thumbnail mx-auto lg:float-right lg:mr-4">
                 </div>
 

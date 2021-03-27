@@ -1,19 +1,19 @@
 <?php 
 
 /* AJAX CALL */ 
-function financial_service(){
+function legal_location(){
 	$args = array(
 		'orderby' => 'date', // we will sort posts by date
 		'order'	=> $_POST['date'] // ASC or DESC
 	);
  
 	// for taxonomies / categories
-	if( isset( $_POST['financialService'] ) )
+	if( isset( $_POST['legalLocation'] ) )
 		$args['tax_query'] = array(
 			array(
-				'taxonomy' => 'service',
+				'taxonomy' => 'location-legal',
 				'field' => 'id',
-				'terms' => $_POST['financialService'],
+				'terms' => $_POST['legalLocation'],
 			)
 		);
  
@@ -35,7 +35,7 @@ function financial_service(){
               <?php
       
             // outputing result of selected category
-            $taxonomyLocations = get_the_terms( $post->ID, 'service' );
+            $taxonomyLocations = get_the_terms( $post->ID, 'location-legal' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
                 echo $taxonomyLocation->name . '&nbsp;'; // or whatever value
                 } ?>
@@ -56,7 +56,7 @@ function financial_service(){
       
         $args = array(
           'posts_per_page' => '9',
-          'post_type' => 'financial',
+          'post_type' => 'legal',
           'orderby' => 'date',
           'order' => 'DESC',
         );
@@ -66,7 +66,7 @@ function financial_service(){
         while($financialQuery->have_posts()){
           $financialQuery->the_post();
         
-        $serviceLink = get_field('link_to_service');
+        $serviceLink = get_field('service_book_it_link');
 
       ?>
 
@@ -79,7 +79,7 @@ function financial_service(){
               <?php
       
             // outputing result of selected category
-            $taxonomyLocations = get_the_terms( $post->ID, 'service' );
+            $taxonomyLocations = get_the_terms( $post->ID, 'location-legal' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
                 echo $taxonomyLocation->name . '&nbsp;'; // or whatever value
                 } ?>
@@ -92,9 +92,6 @@ function financial_service(){
           </article>
 
           <?php } 
-
-
-
     
 	endif; ?>
 
@@ -104,8 +101,8 @@ function financial_service(){
  
 	die();
 }
-add_action('wp_ajax_serviceFinancialFilter', 'financial_service'); // wp_ajax_{ACTION HERE} 
-add_action('wp_ajax_nopriv_serviceFinancialFilter', 'financial_service');
+add_action('wp_ajax_locationLegalFilter', 'legal_location'); // wp_ajax_{ACTION HERE} 
+add_action('wp_ajax_nopriv_locationLegalFilter', 'legal_location');
 
 
 ?>

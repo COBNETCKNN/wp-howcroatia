@@ -60,6 +60,18 @@ function serviceRealEstate() {
 }
 add_action( 'init', 'serviceRealEstate', 0 );
 
+//Custom Location Taxonomy for Real Estate Custom Post Type
+function locationRealEstate() {
+    $args = array(
+        'label'        => __( 'Location', 'textdomain' ),
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+    
+    register_taxonomy( 'location-real-estate', 'estate', $args );
+}
+add_action( 'init', 'locationRealEstate', 0 );
+
 //Custom Service Taxonomy for Medical Services Custom Post Type
 function serviceMedical() {
     $args = array(
@@ -95,6 +107,18 @@ function serviceLegal() {
     register_taxonomy( 'service-legal', 'legal', $args );
 }
 add_action( 'init', 'serviceLegal', 0 );
+
+//Custom Location Taxonomy for Legal Services Custom Post Type
+function locationLegal() {
+    $args = array(
+        'label'        => __( 'Location', 'textdomain' ),
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+    
+    register_taxonomy( 'location-legal', 'legal', $args );
+}
+add_action( 'init', 'locationLegal', 0 );
 
 
 
