@@ -5,13 +5,30 @@
 <!-- HERO SECTION -->
   <section class="scroll-nav-trigger js-scroll-nav-trigger"></section>
   <section class="rental-articles">
-      <h2 class="section-heading font-medium font-montserrat">Hotels & Luxury Rentals</h2>
+      <h2 class="section-heading font-medium font-montserrat pb-14">Hotels & Luxury Rentals</h2>
 
 <!-- AJAX FILTER FOR HOTELS AND LUXURY RENTALS -->
-<div class="container mx-auto text-center p-6 pb-28">
   <div class="flex justify-center m-auto">
- 
 
+<!-- SERVICES FORM -->
+  <form class="" action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="hotel_service">
+  <div class="filter-selectors__filter filter-selectors__filter--light">
+  <div class="filter-selectors__filter__label">Service:</div>
+    <?php
+      if( $terms = get_terms( array( 'taxonomy' => 'hotel-category', 'orderby' => 'name' ) ) ) : 
+  
+        echo '<select class="hotel__select" name="hotelService"><option value="">All Services</option>';
+        foreach ( $terms as $term ) :
+          echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
+        endforeach;
+        echo '</select>';
+      endif;
+    ?>
+    <input type="hidden" name="action" value="serviceHotelFilter">
+    </div>
+  </form>
+
+<!-- LOCATION FORM -->
   <form class="" action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
   <div class="filter-selectors__filter filter-selectors__filter--light">
   <div class="filter-selectors__filter__label">Location:</div>
@@ -30,11 +47,10 @@
   </form>
 
  </div>
-</div>
 
 <!-- HOTELS AND LUXURY RENTALS CONTENT -->
 <div class="container__howcroatia" id="response">
-    <div class="grid grid-cols-2 gap-14">
+    <div class="grid grid-cols-2 gap-14 mt-32">
 <?php
     $args = array(
         'post_type' => 'hotel',

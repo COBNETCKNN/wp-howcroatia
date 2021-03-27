@@ -1,19 +1,19 @@
 <?php 
 
 /* AJAX CALL */ 
-function real_estate_location(){
+function hotel_service(){
 	$args = array(
 		'orderby' => 'date', // we will sort posts by date
 		'order'	=> $_POST['date'] // ASC or DESC
 	);
  
 	// for taxonomies / categories
-	if( isset( $_POST['realEstateLocation'] ) )
+	if( isset( $_POST['hotelService'] ) )
 		$args['tax_query'] = array(
 			array(
-				'taxonomy' => 'location-real-estate',
+				'taxonomy' => 'hotel-category',
 				'field' => 'id',
-				'terms' => $_POST['realEstateLocation'],
+				'terms' => $_POST['hotelService'],
 			)
 		);
  
@@ -35,7 +35,7 @@ function real_estate_location(){
               <?php
       
             // outputing result of selected category
-            $taxonomyLocations = get_the_terms( $post->ID, 'location-real-estate' );
+            $taxonomyLocations = get_the_terms( $post->ID, 'hotel-category' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
                 echo $taxonomyLocation->name . '&nbsp;'; // or whatever value
                 } ?>
@@ -56,17 +56,15 @@ function real_estate_location(){
       
         $args = array(
           'posts_per_page' => '9',
-          'post_type' => 'legal',
+          'post_type' => 'hotel',
           'orderby' => 'date',
           'order' => 'DESC',
         );
 
-        $financialQuery = new WP_Query($args);
+        $hotelQuery = new WP_Query($args);
 
-        while($financialQuery->have_posts()){
-          $financialQuery->the_post();
-        
-        $serviceLink = get_field('service_book_it_link');
+        while($hotelQuery->have_posts()){
+          $hotelQuery->the_post();
 
       ?>
 
@@ -79,7 +77,7 @@ function real_estate_location(){
               <?php
       
             // outputing result of selected category
-            $taxonomyLocations = get_the_terms( $post->ID, 'location-real-estate' );
+            $taxonomyLocations = get_the_terms( $post->ID, 'hotel-category' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
                 echo $taxonomyLocation->name . '&nbsp;'; // or whatever value
                 } ?>
@@ -92,7 +90,7 @@ function real_estate_location(){
           </article>
 
           <?php } 
-    
+
 	endif; ?>
 
     </div>
@@ -101,8 +99,8 @@ function real_estate_location(){
  
 	die();
 }
-add_action('wp_ajax_locationRealEstateFilter', 'real_estate_location'); // wp_ajax_{ACTION HERE} 
-add_action('wp_ajax_nopriv_locationRealEstateFilter', 'real_estate_location');
+add_action('wp_ajax_serviceHotelFilter', 'hotel_service'); // wp_ajax_{ACTION HERE} 
+add_action('wp_ajax_nopriv_serviceHotelFilter', 'hotel_service');
 
 
 ?>

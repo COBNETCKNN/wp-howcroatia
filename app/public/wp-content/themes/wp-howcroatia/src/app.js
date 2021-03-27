@@ -1,5 +1,21 @@
 jQuery(function($){
 
+		//services filter for Real Estate services
+	$('#hotel_service').change(function(){
+		var filter = $('#hotel_service');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+			},
+			success:function(data){
+				$('#response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
 	// location filter for hotels and luxury rentals
 	$('#filter').change(function(e){
 		var filter = $('#filter');
@@ -146,7 +162,7 @@ jQuery(function($){
 		return false;
 	});
 
-		//location filter for medical services
+	//location filter for medical services
 	$('#real_estate_location').change(function(){
 		var filter = $('#real_estate_location');
 		$.ajax({

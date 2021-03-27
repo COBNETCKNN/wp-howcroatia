@@ -64,8 +64,6 @@ remove_filter( 'the_content', 'wpautop' );
 
 
 
-/* LOAD MORE POSTS AJAX */
-require_once('ajax/ajax-loadmore.php');
 
 /* AJAX CATEGORIES FOR MAGAZINE */
 require_once('ajax/ajax-categories.php');
@@ -75,6 +73,9 @@ require_once('ajax/custom-taxonomies.php');
 
 /* AJAX LOCATION CALL FOR HOTELS AND LUXURY RENTALS */
 require_once('ajax/ajax-hotel.php');
+
+/* AJAX SERVICE FILTER FOR HOTELS AND LUXURY RENTALS */
+require_once('ajax/ajax-hotel-service.php');
 
 /* AJAX SERVICE FILTER FOR FINANCIAL SERVICES */
 require_once('ajax/ajax-financial-service.php');
