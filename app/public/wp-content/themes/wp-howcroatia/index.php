@@ -96,22 +96,33 @@
     <div class="container__howcroatia">
 
 <!-- CATEGORY FILTER -->
-    <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="category_filter">
-    <span class="filter-selectors__filter__label">Category:</span>
-      <?php
-        if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) : 
-    
-          echo '<select class="category__select" name="categoryfilter"><option value="">All Categories</option>
-          ';
-          foreach ( $terms as $term ) :
-            echo '
-            <option class="bg-white text-black" value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
-          endforeach;
-          echo '</select>';
-        endif;
-      ?>
-      <input type="hidden" name="action" value="categoryfilter">
-    </form>
+      <div class="filter-selectors">
+        <div class="filter-selectors__filter">
+          <span class="filter-selectors__filter__label">Category:</span>
+          <div data-filter="service" class="filter-selectors__filter__dropdown">
+            <div class="filter-selectors__filter__dropdown__selected text-white">All</div>
+            <div class="filter-items-dropdown js-dropdown">
+
+              <div class="categories">
+                <ul>
+                  <?php
+                    $cat_args = get_terms(array(
+                      'taxonomy' => 'category',
+                      'orderby' => 'name',
+                    ));
+
+                    $categories = $cat_args;
+
+                    foreach($categories as $cat) : ?>
+                    <li class="filter-items-dropdown__item category"><a data-category="<?php echo $cat->term_id ?>" href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name; ?></a></li>
+                  <?php endforeach; ?>
+                </ul>
+              </div>
+
+              </div>
+          </div>
+        </div>
+        </div>
     <div id="category_response">
           <div class="grid grid-cols-3 gap-4 mt-32 pb-20 md:pb-0">
 

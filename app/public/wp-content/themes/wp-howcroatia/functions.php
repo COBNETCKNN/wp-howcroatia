@@ -51,9 +51,13 @@ add_action( 'init', 'custom_menus' );
 remove_filter( 'the_content', 'wpautop' );
 
 
-/* AJAX FILTERS */
+/* CUSTOM TAXONOMIES */
+require_once('ajax/custom-taxonomies.php');
 
-/* AJAX FILTER FOR HOTELS & LUXURY RENTALS SERVICES */
+
+/* -- AJAX FILTERS --  
+
+   AJAX FILTER FOR HOTELS & LUXURY RENTALS SERVICES */
 require_once('ajax/hotel-service.php');
 
 /* AJAX FILTER FOR HOTELS & LUXURY RENTALS LOCATION */
@@ -82,6 +86,9 @@ require_once('ajax/real-estate-service.php');
 
 /* AJAX FILTER FOR REAL ESTATE LOCATION */
 require_once('ajax/real-estate-location.php');
+
+/* AJAX FILTER FOR MAGAZINE CATEGORIES */
+require_once('ajax/magazine-categories.php');
 
 
 

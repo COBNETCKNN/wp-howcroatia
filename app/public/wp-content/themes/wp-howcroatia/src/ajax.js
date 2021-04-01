@@ -230,4 +230,28 @@
     });
   });
 
+  // ajax call for Magazine categories
+  $(document).ready(function(){
+    $(document).on('click', '.category > a', function(e){
+      e.preventDefault();
+
+      var category = $(this).data('category');
+
+      $.ajax({
+        url: wpAjax.ajaxUrl,
+        // filter here is handler for add_action callback function in ajax-filter.php
+        data: { action: 'category', category: category},
+        type: 'post',
+        success: function(result) {
+          $('#category_response').html(result);
+        },
+        error: function(result) {
+          console.warn(result);
+        }
+
+      });
+    });
+  });
+
+
 })(jQuery);

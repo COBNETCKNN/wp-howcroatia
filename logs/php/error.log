@@ -5570,3 +5570,227 @@ Stack trace:
 [01-Apr-2021 13:00:09 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\plugin.php:484
 [01-Apr-2021 13:00:09 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:311
 [01-Apr-2021 13:00:09 UTC] PHP   5. real_estate_location() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-includes\class-wp-hook.php:287
+[01-Apr-2021 13:07:10 UTC] PHP Warning:  require_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\ajax-categories.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:10 UTC] PHP Warning:  require_once(C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
+[01-Apr-2021 13:07:10 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:10 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:10 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:10 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:10 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:10 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:10 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:10 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:10 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:10 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:10 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:10 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:10 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:10 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:10 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\ajax-categories.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:10 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\ajax\ajax-hotel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
+[01-Apr-2021 13:07:10 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:10 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:10 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:10 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:10 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:10 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:10 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:10 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:10 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:10 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:10 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:10 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:10 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:10 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:10 UTC] PHP Warning:  require_once(ajax/ajax-categories.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:10 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:10 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:10 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:10 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:10 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:10 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:10 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:10 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/ajax-categories.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:10 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:10 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:10 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:10 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:10 UTC] PHP Warning:  require_once(ajax/ajax-categories.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:10 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:11 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:11 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:11 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:11 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:11 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:11 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:11 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:11 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:11 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:11 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/ajax-categories.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:11 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:11 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:11 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:11 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:11 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:11 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:11 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:16 UTC] PHP Warning:  require_once(ajax/ajax-categories.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:16 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:16 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:16 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:16 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:16 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:16 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:16 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:16 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/ajax-categories.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:16 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:16 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:16 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:16 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:16 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:16 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:16 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:16 UTC] PHP Warning:  require_once(ajax/ajax-categories.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:16 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:16 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:16 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:16 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:16 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:16 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:16 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:07:16 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/ajax-categories.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:07:16 UTC] PHP Stack trace:
+[01-Apr-2021 13:07:16 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:07:16 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:07:16 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:07:16 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:07:16 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:07:16 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:08:26 UTC] PHP Warning:  require_once(ajax/ajax-categories.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:08:26 UTC] PHP Stack trace:
+[01-Apr-2021 13:08:26 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:08:26 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:08:26 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:08:26 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:08:26 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:08:26 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:08:26 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/ajax-categories.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:08:26 UTC] PHP Stack trace:
+[01-Apr-2021 13:08:26 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:08:26 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:08:26 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:08:26 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:08:26 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:08:26 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:08:26 UTC] PHP Warning:  require_once(ajax/ajax-categories.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:08:26 UTC] PHP Stack trace:
+[01-Apr-2021 13:08:26 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:08:26 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:08:26 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:08:26 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:08:26 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:08:26 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:08:26 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/ajax-categories.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 57
+[01-Apr-2021 13:08:26 UTC] PHP Stack trace:
+[01-Apr-2021 13:08:26 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:08:26 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:08:26 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:08:26 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:08:26 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:08:26 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:09:42 UTC] PHP Warning:  require_once(ajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
+[01-Apr-2021 13:09:42 UTC] PHP Stack trace:
+[01-Apr-2021 13:09:42 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:09:42 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:09:42 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:09:42 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:09:42 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:09:42 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:09:42 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/ajax-hotel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
+[01-Apr-2021 13:09:42 UTC] PHP Stack trace:
+[01-Apr-2021 13:09:42 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:09:42 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:09:42 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:09:42 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:09:42 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:09:42 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:09:42 UTC] PHP Warning:  require_once(ajax/ajax-hotel.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
+[01-Apr-2021 13:09:42 UTC] PHP Stack trace:
+[01-Apr-2021 13:09:42 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:09:42 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:09:42 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:09:42 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:09:42 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:09:42 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:09:42 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/ajax-hotel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 63
+[01-Apr-2021 13:09:42 UTC] PHP Stack trace:
+[01-Apr-2021 13:09:42 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:09:42 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:09:42 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:09:42 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:09:42 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:09:42 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:31:00 UTC] PHP Warning:  require_once(ajax/magazine-category.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 91
+[01-Apr-2021 13:31:00 UTC] PHP Stack trace:
+[01-Apr-2021 13:31:00 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:31:00 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:31:00 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:31:00 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:31:00 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:31:00 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:31:00 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/magazine-category.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 91
+[01-Apr-2021 13:31:00 UTC] PHP Stack trace:
+[01-Apr-2021 13:31:00 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:31:00 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:31:00 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:31:00 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:31:00 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:31:00 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:31:00 UTC] PHP Warning:  require_once(ajax/magazine-category.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 91
+[01-Apr-2021 13:31:00 UTC] PHP Stack trace:
+[01-Apr-2021 13:31:00 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:31:00 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:31:00 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:31:00 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:31:00 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:31:00 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:31:00 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/magazine-category.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 91
+[01-Apr-2021 13:31:00 UTC] PHP Stack trace:
+[01-Apr-2021 13:31:00 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:31:00 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:31:00 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:31:00 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:31:00 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:31:00 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:31:05 UTC] PHP Warning:  require_once(ajax/magazine-category.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 91
+[01-Apr-2021 13:31:05 UTC] PHP Stack trace:
+[01-Apr-2021 13:31:05 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:31:05 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:31:05 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:31:05 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:31:05 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:31:05 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:31:05 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/magazine-category.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 91
+[01-Apr-2021 13:31:05 UTC] PHP Stack trace:
+[01-Apr-2021 13:31:05 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:31:05 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:31:05 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:31:05 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:31:05 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:31:05 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:31:05 UTC] PHP Warning:  require_once(ajax/magazine-category.php): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 91
+[01-Apr-2021 13:31:05 UTC] PHP Stack trace:
+[01-Apr-2021 13:31:05 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:31:05 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:31:05 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:31:05 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:31:05 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:31:05 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
+[01-Apr-2021 13:31:05 UTC] PHP Fatal error:  require_once(): Failed opening required 'ajax/magazine-category.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-content\themes\wp-howcroatia\functions.php on line 91
+[01-Apr-2021 13:31:05 UTC] PHP Stack trace:
+[01-Apr-2021 13:31:05 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:0
+[01-Apr-2021 13:31:05 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\index.php:17
+[01-Apr-2021 13:31:05 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-blog-header.php:13
+[01-Apr-2021 13:31:05 UTC] PHP   4. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-load.php:37
+[01-Apr-2021 13:31:05 UTC] PHP   5. require_once() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-config.php:77
+[01-Apr-2021 13:31:05 UTC] PHP   6. include() C:\Users\COBNETCKNN\Local Sites\howcroatia\app\public\wp-settings.php:525
