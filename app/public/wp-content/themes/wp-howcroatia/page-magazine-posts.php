@@ -15,82 +15,6 @@
         </article>
     </section>
 
-    <!-- FEATURED ARTICLES -->
-    <section class="featured-blog-articles">
-      <div class="container__howcroatia">
-        <h2 class="section-heading pb-20 font-medium">Featured articles</h2>
-        <div class="block md:grid grid-cols-3 gap-0 mb-24">
-
-      <?php 
-
-        $blogQuery = new WP_Query(array(
-          'page_id' => 9,
-          'posts_per_page' => 3,
-          'order' => 'DESC',
-          'orderby' => 'date',
-          'meta_query' => array(
-            array(
-              'key' => 'featured_article',
-              'value' => '"Yes"',
-              'compare' => 'LIKE',
-            )
-          )
-        ));
-
-        while($blogQuery->have_posts()){
-          $blogQuery->the_post();  ?>
-          
-          <article class="blog-article">
-            <figure class="visual-container">
-              <img src="<?php the_post_thumbnail_url('postsThumbnail');?>" alt="Sea">
-            </figure>
-            <div class="blog-article__title"><?php the_category(); ?></div>
-            <a href="<?php the_permalink(); ?>" class="blog-article__heading"><?php the_title(); ?></a>
-            <a href="<?php the_permalink(); ?>" class="btn-circle btn-circle--blog-article">
-              <div class="btn-circle__background"></div>
-            </a>
-          </article>
-
-          <?php
-            }
-              wp_reset_postdata();
-          ?>
-            
-           </div>
-         </div>
-      </section>
-
-<!-- ADVERTISEMENT SECTION -->
-            
-        <?php 
-        
-          $args = array(
-            'posts_per_page' => 1,
-            'post_type' => 'advertisement',
-            'orderby' => 'rand',
-            'order' => 'DESC',
-          );
-
-          $advertisementQuery = new WP_Query($args);
-
-          while($advertisementQuery->have_posts()){
-            $advertisementQuery->the_post();
-
-            //acf link field
-            $advertisementLink = get_field('advertisement_link');
-          
-        ?>
-
-        <div class="advertisement__picture container__howcroatia advertisement__image mt-28">
-          <a href="<?php echo $advertisementLink; ?>" target="_blank">
-            <img src="<?php the_post_thumbnail_url(); ?>" alt="sample ad">
-          </a>
-        </div>
-
-        <?php }
-          wp_reset_postdata();
-        ?>
-
 <!-- ALL MAGAZINE ARTICLES -->      
   <section class="recent-blog-articles">
     <div class="container__howcroatia">
@@ -130,7 +54,7 @@
       
           $args = array(
             'page_id' => 9,
-            'posts_per_page' => 6,
+            'posts_per_page' => -1,
             'order' => 'DSC',
             'orderby' => 'date',
           );
@@ -160,8 +84,6 @@
       </div>
      </div>
     </div>
-<a href="<?php echo esc_url(site_url('/magazine-posts')); ?>"><button class="view-more-btn">View more stories</button></a>
-      
     </div>
   </section>
   

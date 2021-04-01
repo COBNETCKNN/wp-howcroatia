@@ -5,7 +5,7 @@
 <!-- HERO SECTION -->
   <section class="scroll-nav-trigger js-scroll-nav-trigger"></section>
   <section class="rental-articles">
-      <h2 class="section-heading font-medium font-montserrat pb-14">Financial Services</h2>
+      <h2 class="section-heading font-medium font-montserrat pb-14">Medical Services</h2>
 
 <!-- AJAX FILTER FOR HOTELS AND LUXURY RENTALS -->
 
@@ -22,14 +22,14 @@
                 <ul>
                   <?php
                     $cat_args = get_terms(array(
-                      'taxonomy' => 'service',
+                      'taxonomy' => 'service-medical',
                       'orderby' => 'name',
                     ));
 
                     $categories = $cat_args;
 
                     foreach($categories as $cat) : ?>
-                    <li class="filter-items-dropdown__item financial-service"><a data-category="<?php echo $cat->term_id ?>" href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name; ?></a></li>
+                    <li class="filter-items-dropdown__item medical-service"><a data-category="<?php echo $cat->term_id ?>" href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name; ?></a></li>
                   <?php endforeach; ?>
                 </ul>
               </div>
@@ -50,14 +50,14 @@
                 <ul>
                   <?php
                     $cat_args = get_terms(array(
-                      'taxonomy' => 'location-financial',
+                      'taxonomy' => 'location-medical',
                       'orderby' => 'name',
                     ));
 
                     $categories = $cat_args;
 
                     foreach($categories as $cat) : ?>
-                    <li class="filter-items-dropdown__item financial-location"><a data-category="<?php echo $cat->term_id ?>" href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name; ?></a></li>
+                    <li class="filter-items-dropdown__item medical-location"><a data-category="<?php echo $cat->term_id ?>" href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name; ?></a></li>
                   <?php endforeach; ?>
                 </ul>
               </div>
@@ -66,21 +66,21 @@
           </div>
         </div>
     </div>
-<div class="container__howcroatia" id="financial-response">
+<div class="container__howcroatia" id="medical-response">
       <div class="block md:grid grid-cols-2 gap-14 mt-32">
       <?php 
       
         $args = array(
-          'posts_per_page' => 9,
-          'post_type' => 'financial',
+          'posts_per_page' => -1,
+          'post_type' => 'medical',
           'orderby' => 'date',
           'order' => 'DESC',
         );
 
-        $financialQuery = new WP_Query($args);
+        $medicalQuery = new WP_Query($args);
 
-        while($financialQuery->have_posts()){
-          $financialQuery->the_post();
+        while($medicalQuery->have_posts()){
+          $medicalQuery->the_post();
 
       ?>
 
@@ -93,7 +93,7 @@
               <?php
       
             // outputing result of selected category
-            $taxonomyLocations = get_the_terms( $post->ID, 'location-financial' );
+            $taxonomyLocations = get_the_terms( $post->ID, 'location-medical' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
                 echo $taxonomyLocation->name; // or whatever value
                 } ?>
@@ -107,13 +107,9 @@
 
           <?php } ?>
           </div>
-   </div>
-</div>
-      
-    <a href="<?php echo esc_url(site_url('/financial-posts')); ?>"><button class="view-more-btn">View more stories</button></a>
+        </div>
+    </div>
     </div>
   </section>
-
-
 
 <?php get_footer(); ?>

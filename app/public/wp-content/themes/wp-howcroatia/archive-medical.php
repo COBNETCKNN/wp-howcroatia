@@ -71,7 +71,7 @@
       <?php 
       
         $args = array(
-          'posts_per_page' => '9',
+          'posts_per_page' => 9,
           'post_type' => 'medical',
           'orderby' => 'date',
           'order' => 'DESC',
@@ -110,7 +110,7 @@
         </div>
     </div>
       
-      <button class="view-more-btn">View more stories</button>
+          <a href="<?php echo esc_url(site_url('/medical-posts')); ?>"><button class="view-more-btn">View more stories</button></a>
     </div>
   </section>
 

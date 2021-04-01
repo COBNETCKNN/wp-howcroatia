@@ -76,7 +76,7 @@
         'post_type' => 'hotel',
         'orderby' => 'date',
         'order' => 'ASC',
-        'posts_per_page' => 9,
+        'posts_per_page' => -1,
     );
 
     $hotelQuery = new WP_Query($args);
@@ -113,9 +113,6 @@
   <div class="line-separator line-separator--bottom line-separator--light"></div>
 
   </section>
-  <div class="pb-24 pt-14">
-  <a href="<?php echo esc_url(site_url('/hotel-posts')); ?>"><button class="view-more-btn">View more stories</button></a>
-  </div>
 </main>
 
 

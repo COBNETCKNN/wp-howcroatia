@@ -71,7 +71,7 @@
       <?php 
       
         $args = array(
-          'posts_per_page' => '9',
+          'posts_per_page' => 9,
           'post_type' => 'legal',
           'orderby' => 'date',
           'order' => 'DESC',
@@ -109,8 +109,7 @@
           </div>
         </div>
     </div>
-      
-      <button class="view-more-btn">View more stories</button>
+      <a href="<?php echo esc_url(site_url('/legal-posts')); ?>"><button class="view-more-btn">View more stories</button></a>
     </div>
   </section>
 

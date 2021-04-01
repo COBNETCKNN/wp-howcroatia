@@ -71,7 +71,7 @@
       <?php 
       
         $args = array(
-          'posts_per_page' => 9,
+          'posts_per_page' => -1,
           'post_type' => 'financial',
           'orderby' => 'date',
           'order' => 'DESC',
@@ -109,8 +109,6 @@
           </div>
    </div>
 </div>
-      
-    <a href="<?php echo esc_url(site_url('/financial-posts')); ?>"><button class="view-more-btn">View more stories</button></a>
     </div>
   </section>
 
