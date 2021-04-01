@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 
 /* LOADING CSS AND JS FILES */
 function howcroatia_files() {
 
-    global $wp_query; 
+    global $wp_query;
 
     //enqueing CSS
     wp_enqueue_style('mainCSS', get_template_directory_uri() . '/css/main.css');
@@ -15,24 +15,12 @@ function howcroatia_files() {
     wp_enqueue_script('animeJS', get_stylesheet_directory_uri() . '/js/anime.min.js', array(), 1.0, false);
     wp_enqueue_script('mainJS', get_stylesheet_directory_uri() . '/js/main.js', array(), 1.0, true);
     wp_enqueue_script('appJS', get_stylesheet_directory_uri() . '/src/app.js', array(), 1.0, true);
+    wp_enqueue_script('ajaxJS', get_stylesheet_directory_uri() . '/src/ajax.js', array(), 1.0, true);
 
+    wp_localize_script('ajaxJS', 'wpAjax',
+    array('ajaxUrl' => admin_url('admin-ajax.php'))
+  );
 
- /*
-	// register our main script but do not enqueue it yet
-	wp_register_script( 'my_loadmore', get_stylesheet_directory_uri() . '/ajax/ajax-loadmore.php', array('jquery') );
- 
-	// now the most interesting part
-	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
-	// you can define variables directly in your HTML but I decided that the most proper way is wp_localize_script()
-	wp_localize_script( 'my_loadmore', 'misha_loadmore_params', array(
-		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
-		'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
-		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
-		'max_page' => $wp_query->max_num_pages
-	) );
- 
- 	wp_enqueue_script( 'my_loadmore' );
-*/
 
 }
 add_action('wp_enqueue_scripts', 'howcroatia_files');
@@ -63,44 +51,37 @@ add_action( 'init', 'custom_menus' );
 remove_filter( 'the_content', 'wpautop' );
 
 
+/* AJAX FILTERS */
 
+/* AJAX FILTER FOR HOTELS & LUXURY RENTALS SERVICES */
+require_once('ajax/hotel-service.php');
 
-/* AJAX CATEGORIES FOR MAGAZINE */
-require_once('ajax/ajax-categories.php');
+/* AJAX FILTER FOR HOTELS & LUXURY RENTALS LOCATION */
+require_once('ajax/hotel-location.php');
 
-/* CUSTOM TAXONOMIES */
-require_once('ajax/custom-taxonomies.php');
+/* AJAX FILTER FOR MEDICAL SERVICES */
+require_once('ajax/medical-service.php');
 
-/* AJAX LOCATION CALL FOR HOTELS AND LUXURY RENTALS */
-require_once('ajax/ajax-hotel.php');
+/* AJAX FILTER FOR MEDICAL LOCATION */
+require_once('ajax/medical-location.php');
 
-/* AJAX SERVICE FILTER FOR HOTELS AND LUXURY RENTALS */
-require_once('ajax/ajax-hotel-service.php');
+/* AJAX FILTER FOR LEGAL SERVICES */
+require_once('ajax/legal-service.php');
 
-/* AJAX SERVICE FILTER FOR FINANCIAL SERVICES */
-require_once('ajax/ajax-financial-service.php');
+/* AJAX FILTER FOR LEGAL LOCATION */
+require_once('ajax/legal-location.php');
 
-/* AJAX LOCATION FILTER FOR FINANCIAL LOCATION */
-require_once('ajax/ajax-financial-location.php');
+/* AJAX FILTER FOR FINANCIAL SERVICES */
+require_once('ajax/financial-service.php');
 
-/* AJAX SERVICE FILTER FOR MEDICAL SERVICES */
-require_once('ajax/ajax-medical-service.php');
+/* AJAX FILTER FOR FINANCIAL LOCATION */
+require_once('ajax/financial-location.php');
 
-/* AJAX LOCATION FILTER FOR MEDICAL SERVICES */
-require_once('ajax/ajax-medical-location.php');
+/* AJAX FILTER FOR REAL ESTATE SERVICES */
+require_once('ajax/real-estate-service.php');
 
-/* AJAX SERVICE FILTER FOR LEGAL SERVICES */
-require_once('ajax/ajax-legal-service.php');
-
-/* AJAX LOCATION FILTER FOR LEGAL SERVICES */
-require_once('ajax/ajax-legal-location.php');
-
-/* AJAX SERVICE FILTER FOR REAL ESTATE SERVICES */
-require_once('ajax/ajax-real-estate-service.php');
-
-/* AJAX LOCATION FILTER FOR REAL ESTATE SERVICES */
-require_once('ajax/ajax-real-estate-location.php');
-
+/* AJAX FILTER FOR REAL ESTATE LOCATION */
+require_once('ajax/real-estate-location.php');
 
 
 

@@ -1,28 +1,27 @@
-<?php 
+<?php
 
-/* AJAX CALL */ 
-function legal_location(){
-	$args = array(
+function medical_location() {
+
+$args = array(
 		'orderby' => 'date', // we will sort posts by date
 		'order'	=> $_POST['date'] // ASC or DESC
 	);
  
 	// for taxonomies / categories
-	if( isset( $_POST['legalLocation'] ) )
+	if( isset( $_POST['category'] ) )
 		$args['tax_query'] = array(
 			array(
-				'taxonomy' => 'location-legal',
+				'taxonomy' => 'location-medical',
 				'field' => 'id',
-				'terms' => $_POST['legalLocation'],
+				'terms' => $_POST['category']
 			)
 		);
  
 	$query = new WP_Query( $args ); ?>
 
-    <div class="block md:grid grid-cols-2 gap-4 mx-auto mt-32">
-
-    <?php
+   <div class="grid grid-cols-2 gap-14 mt-32">
  
+ <?php
 	if( $query->have_posts() ) :
 		while( $query->have_posts() ): $query->the_post(); ?>
 
@@ -35,7 +34,7 @@ function legal_location(){
               <?php
       
             // outputing result of selected category
-            $taxonomyLocations = get_the_terms( $post->ID, 'location-legal' );
+            $taxonomyLocations = get_the_terms( $post->ID, 'service-medical' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
                 echo $taxonomyLocation->name . '&nbsp;'; // or whatever value
                 } ?>
@@ -50,21 +49,21 @@ function legal_location(){
 <?php
 		endwhile;
 		wp_reset_postdata();
-	else : ?>
+    	else : ?>
 
          <?php 
       
         $args = array(
           'posts_per_page' => '9',
-          'post_type' => 'legal',
+          'post_type' => 'medical',
           'orderby' => 'date',
           'order' => 'DESC',
         );
 
-        $financialQuery = new WP_Query($args);
+        $medicalQuery = new WP_Query($args);
 
-        while($financialQuery->have_posts()){
-          $financialQuery->the_post();
+        while($medicalQuery->have_posts()){
+          $medicalQuery->the_post();
         
         $serviceLink = get_field('service_book_it_link');
 
@@ -79,7 +78,7 @@ function legal_location(){
               <?php
       
             // outputing result of selected category
-            $taxonomyLocations = get_the_terms( $post->ID, 'location-legal' );
+            $taxonomyLocations = get_the_terms( $post->ID, 'service-medical' );
                 foreach ( $taxonomyLocations as $taxonomyLocation ) {
                 echo $taxonomyLocation->name . '&nbsp;'; // or whatever value
                 } ?>
@@ -92,17 +91,14 @@ function legal_location(){
           </article>
 
           <?php } 
-    
+
 	endif; ?>
 
-    </div>
+        </div>
 
-    <?php
- 
-	die();
+<?php die();
 }
-add_action('wp_ajax_locationLegalFilter', 'legal_location'); // wp_ajax_{ACTION HERE} 
-add_action('wp_ajax_nopriv_locationLegalFilter', 'legal_location');
+add_action('wp_ajax_nopriv_medicalLocation', 'medical_location');
+add_action('wp_ajax_medicalLocation', 'medical_location');
 
-
-?>
+ ?>

@@ -316,3 +316,31 @@ header .header_nav_menu li a {
 .service-block__services__item:last-of-type::after {
   content:'';
 }
+
+.hotel__select {
+  text-indent: 5px;
+}
+
+.hotel__select option {
+  background-color: #393533;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-size: 10px;
+  color: #FAF6F5;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: .5rem 0;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: normal;
+}
+
+
+.testing__div {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-size: 10px;
+  color: #FAF6F5;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: .5rem 0;
+  cursor: pointer;
+}

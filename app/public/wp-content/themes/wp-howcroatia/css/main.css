@@ -31493,6 +31493,33 @@ header .header_nav_menu li a {
   content: "";
 }
 
+.hotel__select {
+  text-indent: 5px;
+}
+
+.hotel__select option {
+  background-color: #393533;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  color: #FAF6F5;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: normal;
+}
+
+.testing__div {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  color: #FAF6F5;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
